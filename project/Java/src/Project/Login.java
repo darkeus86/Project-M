@@ -36,7 +36,7 @@ public class Login extends WebFrame {
         mainPanel.add(passwordLabel);
         mainPanel.add(password);
 
-        add(mainPanel);
+        add(mainPanel, BorderLayout.NORTH);
         add(logButton);
 
         setDefaultCloseOperation(WebFrame.EXIT_ON_CLOSE);
