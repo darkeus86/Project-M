@@ -5,13 +5,16 @@ import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
 import com.alee.laf.rootpane.WebFrame;
 import com.alee.laf.text.WebPasswordField;
+
 import com.alee.laf.text.WebTextField;
 
+import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 
 public class Login extends WebFrame {
 
-    public   WebLabel welcome = new WebLabel("Welcome");
+    public WebLabel welcome = new WebLabel("Welcome");
     public WebButton logButton;
     public WebLabel loginLabel = new WebLabel("Login");
     public WebLabel passwordLabel= new WebLabel("Password");
@@ -23,23 +26,40 @@ public class Login extends WebFrame {
     {
         super("Project-M");
 
-        setSize(200,200);
+        setSize(700,500);
 
         logButton = new WebButton("Login");
         logButton.setPreferredSize(147, 40);
 
-        mainPanel = new WebPanel(new GridLayout(7, 0, 5, 12));
 
-        mainPanel.add(welcome);
-        mainPanel.add(loginLabel);
-        mainPanel.add(login);
-        mainPanel.add(passwordLabel);
-        mainPanel.add(password);
 
-        add(mainPanel, BorderLayout.NORTH);
-        add(logButton);
+        mainPanel = new WebPanel();
+        mainPanel.setLayout(null);
 
-        setDefaultCloseOperation(WebFrame.EXIT_ON_CLOSE);
+//      ###WELCOME LABEL###
+        welcome.setVerticalAlignment(WebLabel.CENTER);
+        welcome.setHorizontalAlignment(WebLabel.CENTER);
+        welcome.setFontSize(30);
+
+
+
+//      ###COMPOSITION###
+        WebPanel additionalPanel = new WebPanel();
+
+        additionalPanel.setBounds(150,50,375,300);
+        mainPanel.add(additionalPanel);
+
+        additionalPanel.setLayout(new GridLayout(7, 0, 5, 12));
+        additionalPanel.add(welcome);
+        additionalPanel.add(loginLabel);
+        additionalPanel.add(login);
+        additionalPanel.add(passwordLabel);
+        additionalPanel.add(password);
+        additionalPanel.add(logButton);
+
+
+        getContentPane().add(mainPanel); //   метод отрисовки
+        getContentPane().add(mainPanel); //   метод отрисовки
     }
 
     public static void launch()
