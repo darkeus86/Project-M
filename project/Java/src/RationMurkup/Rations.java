@@ -22,77 +22,105 @@ public class Rations {
     WebImage img;
     WebButton bToOrder = new WebButton("To order");
     WebLabel lPrice;
-    int WEIGHT_RATION_PANEL = 700;
-    int HEIGHT_RATION_PANEL = 170;
 
     GridBagLayout gbL = new GridBagLayout();
-    GridBagConstraints constraints = new GridBagConstraints();
+    private GridBagConstraints constraints = new GridBagConstraints();
 
-
-
-
-
-
-
-    public Rations(String title, String description,String price, WebImage picture)
-    {
+    public Rations(String title, String description, String price, WebImage picture) {
         lTitle = new WebLabel(title);
-
-
+        lTitle.setBackground(new Color(64, 23, 23));
         tfDescription = new WebTextField(description);
         img = picture;
         lPrice = new WebLabel(price);
-        mainPanel.setPreferredSize(WEIGHT_RATION_PANEL, HEIGHT_RATION_PANEL);
-        mainPanel.setBorder(BorderFactory.createTitledBorder("ration"));
 
         mainPanel.setLayout(gbL);
 
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 0;
         constraints.gridy = 0;
+        constraints.ipadx = 100;
+        constraints.ipady = 100;
+        constraints.gridheight = 2;
+        constraints.insets = new Insets(3, 3, 3, 3);
+        constraints.anchor = GridBagConstraints.CENTER;
         mainPanel.add(img, constraints);
 
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 0;
-        constraints.gridy = 1;
+        constraints.gridy = 2;
+        constraints.ipadx = 100;
+        constraints.gridheight = 1;
+        constraints.ipady = 10;
+        constraints.anchor = GridBagConstraints.CENTER;
+        constraints.insets = new Insets(0, 0, 0, 0);
         mainPanel.add(bToOrder, constraints);
 
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 1;
         constraints.gridy = 0;
+        constraints.ipadx = 300;
+        constraints.gridheight = 1;
+        constraints.ipady = 10;
+        constraints.anchor = GridBagConstraints.CENTER;
+        constraints.insets = new Insets(0, 0, 0, 0);
         mainPanel.add(lTitle, constraints);
 
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 1;
         constraints.gridy = 1;
+        constraints.ipadx = 300;
+        constraints.ipady = 75;
+        constraints.gridheight = 1;
+        constraints.anchor = GridBagConstraints.CENTER;
+        constraints.insets = new Insets(0, 0, 0, 0);
         mainPanel.add(tfDescription, constraints);
 
-        constraints.fill = GridBagConstraints.BOTH;
+        constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.gridx = 1;
         constraints.gridy = 2;
+        constraints.ipadx = 300;
+        constraints.ipady = 10;
+        constraints.gridheight = 1;
+        constraints.anchor = GridBagConstraints.CENTER;
+        constraints.insets = new Insets(0, 0, 0, 0);
         mainPanel.add(lPrice, constraints);
 
     }
 
 
-    public WebPanel getPanel()
-    {
+    public WebPanel getPanel() {
         return mainPanel;
-    }
-
-    public GridBagConstraints getConstraints() {
-        return constraints;
-    }
-
-    public String getTitle() {
-        return lTitle.getText();
-    }
-
-    public String getDescription() {
-        return tfDescription.getText();
     }
 
     public WebImage getImg() {
         return img;
+    }
+
+    public WebLabel getlTitle() {
+        return lTitle;
+    }
+
+    public WebButton getbToOrder() {
+        return bToOrder;
+    }
+
+    public WebLabel getlPrice() {
+        return lPrice;
+    }
+
+    public void setlTitle(WebLabel lTitle) {
+        this.lTitle = lTitle;
+    }
+
+    public void setTfDescription(WebTextField tfDescription) {
+        this.tfDescription = tfDescription;
+    }
+
+    public void setImg(WebImage img) {
+        this.img = img;
+    }
+
+    public void setlPrice(WebLabel lPrice) {
+        this.lPrice = lPrice;
     }
 }
