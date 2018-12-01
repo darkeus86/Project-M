@@ -4,64 +4,106 @@ import com.alee.laf.button.*;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
 import com.alee.laf.rootpane.WebFrame;
+import com.alee.laf.spinner.WebSpinner;
 import com.alee.laf.text.WebPasswordField;
-
 import com.alee.laf.text.WebTextField;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Locale;
 
 public class Login extends WebFrame {
 
-    public WebLabel welcome = new WebLabel("Welcome");
-    public WebButton logButton;
-    public WebLabel loginLabel = new WebLabel("Login");
-    public WebLabel passwordLabel= new WebLabel("Password");
-    public WebTextField login = new WebTextField();
-    public WebPasswordField password = new WebPasswordField();
-    public WebPanel mainPanel;
+    protected WebLabel welcome = new WebLabel("Welcome");
+    protected static WebButton logButton;
+    protected WebLabel loginLabel = new WebLabel("Login");
+    protected WebLabel passwordLabel= new WebLabel("Password");
+    protected WebTextField login = new WebTextField();
+    protected WebPasswordField password = new WebPasswordField();
+    protected GridBagLayout gridBagLayout = new GridBagLayout();
+    protected static GridBagConstraints c = new GridBagConstraints();
 
     public Login()
     {
         super("Project-M");
 
-        setSize(700,500);
+        setSize(600,500);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setLocale(new Locale("en"));
+        setLayout(gridBagLayout);
 
         logButton = new WebButton("Login");
-        logButton.setPreferredSize(147, 40);
+
+        welcome.setFont(new Font("Times New Roman", Font.BOLD, 42));
+        loginLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+        passwordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+        login.setFontSize(15);
+        password.setFontSize(15);
 
 
+        c.anchor = GridBagConstraints.NORTH;
+        c.fill   = GridBagConstraints.NONE;
+        c.gridheight = 1;
+        c.gridwidth  = GridBagConstraints.REMAINDER;
+        c.gridx = GridBagConstraints.RELATIVE;
+        c.gridy = GridBagConstraints.RELATIVE;
+        c.insets = new Insets(25, 0, 50, 0);
+        c.ipadx = 0;
+        c.ipady = 0;
+        c.weightx = 0.0;
+        c.weighty = 0.0;
 
-        mainPanel = new WebPanel();
-        mainPanel.setLayout(null);
+        gridBagLayout.setConstraints(welcome, c);
 
-//      ###WELCOME LABEL###
-        welcome.setVerticalAlignment(WebLabel.CENTER);
-        welcome.setHorizontalAlignment(WebLabel.CENTER);
-        welcome.setFontSize(30);
+        c.insets = new Insets(5, 0, 5, 110);
+        gridBagLayout.setConstraints(loginLabel, c);
 
+        c.insets = new Insets(5, 0, 5, 0);
+        c.ipadx = 150;
+        c.ipady = 0;
+        gridBagLayout.setConstraints(login, c);
 
+        c.insets = new Insets(5, 0, 5, 75);
+        c.ipadx = 0;
+        c.ipady = 0;
+        gridBagLayout.setConstraints(passwordLabel, c);
 
-//      ###COMPOSITION###
-        WebPanel additionalPanel = new WebPanel();
+        c.insets = new Insets(5, 0, 5, 0);
+        c.ipadx = 150;
+        c.ipady = 0;
+        gridBagLayout.setConstraints(password, c);
 
-        additionalPanel.setBounds(150,50,375,300);
-        mainPanel.add(additionalPanel);
+        c.insets = new Insets(90, 0, 35, 0);
+        c.ipadx = 100;
+        c.ipady = 30;
+        gridBagLayout.setConstraints(logButton, c);
 
-        additionalPanel.setLayout(new GridLayout(7, 0, 5, 12));
-        additionalPanel.add(welcome);
-        additionalPanel.add(loginLabel);
-        additionalPanel.add(login);
-        additionalPanel.add(passwordLabel);
-        additionalPanel.add(password);
-        additionalPanel.add(logButton);
+        add(welcome);
+        add(loginLabel);
+        add(login);
+        add(passwordLabel);
+        add(password);
+        add(logButton);
 
+        setDefaultCloseOperation(Login.EXIT_ON_CLOSE);
+        logButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setDefaultCloseOperation(Login.DISPOSE_ON_CLOSE);
+                dispose();
+                setVisible(false);
+            }
+        });
 
-        getContentPane().add(mainPanel); //   метод отрисовки
-        getContentPane().add(mainPanel); //   метод отрисовки
     }
 
+    protected static GridBagConstraints getc()
+    {
+        return c;
+    }
     public static void launch()
     {
         Login login = new Login();
