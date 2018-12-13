@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hessian-4.0.51">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/hessian-4.0.51.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/servlet-api-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
