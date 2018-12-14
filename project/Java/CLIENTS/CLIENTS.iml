@@ -12,5 +12,6 @@
     <orderEntry type="library" name="hessian-4.0.51" level="project" />
     <orderEntry type="module" module-name="API" />
     <orderEntry type="module" module-name="project" />
+    <orderEntry type="module" module-name="SERVER" />
   </component>
 </module>

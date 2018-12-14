@@ -38,8 +38,21 @@ public class Start {
                                                                  @Override
                                                                  public void actionPerformed(ActionEvent e) {
                                                                      //тут будет запрос и проверка наличия пользователя
-                                                                     //
-                                                                     if (true) {
+                                                                     String serverAddress = "http://localhost:8080/";
+                                                                     HessianProxyFactory factory = new HessianProxyFactory();
+                                                                     Request_manager_API apiTest = null;
+                                                                     boolean validation = false;
+
+                                                                     try {
+                                                                         apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                                                                     } catch (MalformedURLException e1) {
+                                                                         e1.printStackTrace();
+                                                                     }
+                                                                     String pass = new String(autorisationWindow.getPassword().getPassword());
+                                                                         validation = apiTest.selectValidationAutorisation(autorisationWindow.getLogin().getText(), pass);
+                                                                         System.out.print("validation from autor:"+validation);
+
+                                                                     if (!validation) {
                                                                          autorisationWindow.dispose();
                                                                          MainFormMarkup mainFrameUser = new MainFormMarkup();
 
@@ -121,6 +134,7 @@ public class Start {
                                                                                              String serverAddress = "http://localhost:8080/";
                                                                                              HessianProxyFactory factory = new HessianProxyFactory();
                                                                                              try {
+
                                                                                                  Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
 
 
@@ -180,6 +194,38 @@ public class Start {
                     public void actionPerformed(ActionEvent e) {
                         registration.dispose();
                         autorisationWindow.setVisible(true);
+                    }
+                });
+
+                registration.getbRegistration().addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String serverAddress = "http://localhost:8080/";
+                        HessianProxyFactory factory = new HessianProxyFactory();
+                        Request_manager_API apiTest = null;
+                        try {
+                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                        } catch (MalformedURLException e1) {
+                            e1.printStackTrace();
+                        }
+                        System.out.print(apiTest.selectValidationRegistration(registration.getLogin().getText()));
+                        String pass = new String(registration.getPfPassword().getPassword());
+                        String repeatPass = new String (registration.getPfRepeatPassword().getPassword());
+                        boolean validation = (apiTest.selectValidationRegistration(registration.getLogin().getText()));
+
+                        if( (validation) && (pass.equals(repeatPass)))
+                        {
+                            System.out.print("registration test");
+                            System.out.print(registration.getPfPassword().getText());
+
+                            try {
+                               // Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                                System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(),pass));
+                            } catch (ClassNotFoundException | SQLException e1) {
+                                e1.printStackTrace();
+                            }
+
+                        }
                     }
                 });
             }
