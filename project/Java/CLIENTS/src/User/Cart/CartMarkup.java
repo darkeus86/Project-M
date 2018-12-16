@@ -41,8 +41,11 @@ public class CartMarkup {
     WebTextField tfFirstName = new WebTextField();
     WebTextField tfSecondName = new WebTextField();
 
-    WebComboBox cbCities = new WebComboBox();
-    WebComboBox cbStreets = new WebComboBox();
+    String[] cities = {"St. Petersburg"};
+    String[] streets = {"Nevsky avenue","Ligovsky Avenue","Pervomaisky Avenue", "Aptekarsky Avenue","text_field+combobox plagin"};
+
+    WebComboBox cbCities = new WebComboBox(cities);
+    WebComboBox cbStreets = new WebComboBox(streets);
 
     Date date = new Date(12);
     JDateChooser calendar = new JDateChooser(date);
@@ -70,7 +73,7 @@ public class CartMarkup {
 
         tfPhoneNum.setBorder(BorderFactory.createTitledBorder("Phone"));
 
-        mainPanel.setBorder(BorderFactory.createTitledBorder("cart"));
+       // mainPanel.setBorder(BorderFactory.createTitledBorder("cart"));
         mainPanel.setBackground(new Color(123, 123, 123));
 
         wbHour.setBorder(BorderFactory.createTitledBorder("Hour"));
@@ -211,8 +214,8 @@ public class CartMarkup {
         this.lDeliveryAdress = lDeliveryAdress;
     }
 
-    public void setlTitle(WebLabel lTitle) {
-        this.lTitle = lTitle;
+    public void setlTitle(String lTitle) {
+        this.lTitle.setText(lTitle);
     }
 
     public void setlPrice(String price) {

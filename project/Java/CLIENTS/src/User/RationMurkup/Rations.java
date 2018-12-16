@@ -4,8 +4,10 @@ import com.alee.extended.image.WebImage;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
+import com.alee.laf.text.WebTextArea;
 import com.alee.laf.text.WebTextField;
 
+import javax.swing.*;
 import java.awt.*;
 
 
@@ -13,7 +15,9 @@ public class Rations {
 
     WebPanel mainPanel = new WebPanel();
     WebLabel lTitle;
-    WebTextField tfDescription;
+
+   WebTextField tfDescription;
+
     WebImage img;
     WebButton bToOrder = new WebButton("To order");
     WebLabel lPrice;
@@ -23,8 +27,15 @@ public class Rations {
 
     public Rations(String title, String description, String price, WebImage picture) {
         lTitle = new WebLabel(title);
-        lTitle.setBackground(new Color(64, 23, 23));
+        lTitle.setBackground(new Color(75,75,75));
+        lTitle.setHorizontalAlignment(SwingConstants.CENTER);
         tfDescription = new WebTextField(description);
+
+
+        tfDescription.setBackground(new Color(150,150,150));
+        tfDescription.setHorizontalAlignment(SwingConstants.CENTER);
+
+
         img = picture;
         lPrice = new WebLabel(price);
 
@@ -57,7 +68,7 @@ public class Rations {
         constraints.gridheight = 1;
         constraints.ipady = 10;
         constraints.anchor = GridBagConstraints.CENTER;
-        constraints.insets = new Insets(0, 0, 0, 0);
+        constraints.insets = new Insets(0, 0, 0, 5);
         mainPanel.add(lTitle, constraints);
 
         constraints.fill = GridBagConstraints.BOTH;
@@ -67,7 +78,7 @@ public class Rations {
         constraints.ipady = 75;
         constraints.gridheight = 1;
         constraints.anchor = GridBagConstraints.CENTER;
-        constraints.insets = new Insets(0, 0, 0, 0);
+        constraints.insets = new Insets(0, 0, 0, 5);
         mainPanel.add(tfDescription, constraints);
 
         constraints.fill = GridBagConstraints.HORIZONTAL;
@@ -109,7 +120,8 @@ public class Rations {
 
     public void setTfDescription(WebTextField tfDescription) {
         this.tfDescription = tfDescription;
-    }
+}
+
 
     public void setImg(WebImage img) {
         this.img = img;

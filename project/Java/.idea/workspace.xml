@@ -1,20 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d50dd164-49a4-43f1-ac24-48f1dc8cf017" name="Default Changelist" comment="коммит всего">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/resource/images/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/resource/images/diet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/resource/images/steak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/resource/images/vegetables.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/Api_Project_M/Ration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/SendReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SERVER/lib/postgresql-42.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SERVER/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API/API.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLIENTS/CLIENTS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/CLIENTS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SERVER/src/Abuse_api.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/Abuse_api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/InProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/InProgress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/MainAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/MyRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/MyRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/SendReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/SimpleUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/TableExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/TableExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/UserLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVER/SERVER.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/SERVER.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVER/src/Abuse_api.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/CartMarkup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/CartMarkup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/Intermediate_Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/Intermediate_Picture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/Rations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/Rations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SERVER/Abuse_api.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/InProgress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Login$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Operator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Operator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Operator$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Operator$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/Operator$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/TableExample$ExampleTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/Project/TableExample.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +78,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Java$Start.ic" NAME="Start Coverage Results" MODIFIED="1543425911558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Java$Start.ic" NAME="Start Coverage Results" MODIFIED="1544871069363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>User.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Java$main_form.ic" NAME="main_form Coverage Results" MODIFIED="1542832367250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -52,57 +106,60 @@
     <session id="-1238795460">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.121" value="1" />
           <entry key="project.open.time.139" value="1" />
           <entry key="project.open.time.201" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.40" value="2" />
-          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.40" value="3" />
+          <entry key="project.open.time.41" value="3" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="3" />
-          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="3" />
           <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Start" value="1" />
-          <entry key="class" value="6" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="45" />
+          <entry key="class" value="9" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="68" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="45" />
+          <entry key="CLASS" value="9" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="68" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Start" value="1" />
-          <entry key="class" value="21" />
+          <entry key="class" value="31" />
           <entry key="dummy" value="105" />
-          <entry key="java" value="21539" />
+          <entry key="java" value="25159" />
           <entry key="txt" value="360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CLASS" value="21" />
-          <entry key="JAVA" value="21537" />
+          <entry key="CLASS" value="31" />
+          <entry key="JAVA" value="25157" />
           <entry key="PLAIN_TEXT" value="466" />
           <entry key="SQL" value="2" />
         </counts>
@@ -112,52 +169,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="110">
+              <caret line="235" column="21" selection-start-line="235" selection-start-column="21" selection-end-line="235" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1544814398179" expanded="true" signature="17613:18084" ph="..." />
+                <marker date="1544978323169" expanded="true" signature="1878:2416" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/SERVER/Abuse_api.class">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="228">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding>
-                <element signature="e#934#935#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2095#2096#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,22 +198,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SERVER/SERVER.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,28 +208,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SERVER/src/Abuse_api.java">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="119">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="100" column="23" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1544814098919" expanded="true" signature="3999:4232" ph="..." />
+                <element signature="e#3498#3499#0" expanded="true" />
+                <element signature="e#3544#3545#0" expanded="true" />
+                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#3920#3921#0" expanded="true" />
+                <element signature="e#3966#3967#0" expanded="true" />
+                <element signature="e#4002#4003#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="-675">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Ration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="27" column="245" selection-start-line="27" selection-start-column="245" selection-end-line="27" selection-end-column="245" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Desktop/hessian-4.0.51.jar!/com/caucho/hessian/server/HessianSkeleton.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2533">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SERVER/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -235,6 +300,7 @@
       <find>third</find>
       <find>sets</find>
       <find>constraints</find>
+      <find>cartMar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -264,14 +330,21 @@
         <option value="$PROJECT_DIR$/Project/SimpleUser.java" />
         <option value="$PROJECT_DIR$/src/Project/SimpleUser.java" />
         <option value="$PROJECT_DIR$/src/Project/Operator.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation_Window.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java" />
-        <option value="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
         <option value="$PROJECT_DIR$/SERVER/src/Abuse_api.java" />
+        <option value="$PROJECT_DIR$/API/src/Api_Project_M/Ration.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" />
+        <option value="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
+        <option value="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" />
       </list>
     </option>
   </component>
@@ -281,8 +354,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="683" />
+    <option name="x" value="434" />
+    <option name="y" value="-13" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -292,7 +373,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,39 +420,6 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="API" type="462c0819:PsiDirectoryNode" />
-              <item name="Api_Project_M" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="SERVER" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,38 +428,49 @@
               <item name="SERVER" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544814911391" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/testDB" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544978720168" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SERVER/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src\User\Autorisation" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="User.Registration" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\src" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\Project" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="User.Registration" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\.idea\resource\images" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER\lib" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\out\production\CLIENTS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,6 +486,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Start">
+    <configuration name="Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operator.Operator" />
+      <module name="CLIENTS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Payment_Pop_Up" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.Pop_up_windows.Payment_Pop_Up" />
       <module name="CLIENTS" />
@@ -466,14 +538,105 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operator.Test" />
+      <module name="CLIENTS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="unnamed">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Java" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="31500" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="unnamed" />
+        </option>
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Tomcat Server.Server" />
       <item itemvalue="Application.Start" />
       <item itemvalue="Application.Payment_Pop_Up" />
       <item itemvalue="Application.SimpleUser" />
+      <item itemvalue="Application.Operator" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Start" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Operator" />
         <item itemvalue="Application.SimpleUser" />
         <item itemvalue="Application.Payment_Pop_Up" />
       </list>
@@ -513,7 +676,11 @@
       <workItem from="1544647282570" duration="5078000" />
       <workItem from="1544688354091" duration="11954000" />
       <workItem from="1544719999906" duration="8672000" />
-      <workItem from="1544804331823" duration="9099000" />
+      <workItem from="1544804331823" duration="9727000" />
+      <workItem from="1544818937959" duration="5963000" />
+      <workItem from="1544864454173" duration="4083000" />
+      <workItem from="1544868812013" duration="7251000" />
+      <workItem from="1544962194258" duration="13389000" />
     </task>
     <task id="LOCAL-00001" summary="сраный гит не дает запустить файл в идиешке до того, как я ег оне свяжу с гитом">
       <created>1542906313119</created>
@@ -526,30 +693,32 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157812000" />
+    <option name="totallyTimeSpent" value="189126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.3494705" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28366113" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.20983607" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.21639344" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.48360655" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.30983606" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Database" order="2" />
@@ -605,6 +774,20 @@
     <MESSAGE value="Надеюсь сервер и апи не прилетят&#10;а так, чуток пофиксил некоторые недостатки&#10;и добавил всплывающие окно при нажатие на confirm. &#10;думаю в дисе появсю как накатить томкат для тестинга" />
     <option name="LAST_COMMIT_MESSAGE" value="Надеюсь сервер и апи не прилетят&#10;а так, чуток пофиксил некоторые недостатки&#10;и добавил всплывающие окно при нажатие на confirm. &#10;думаю в дисе появсю как накатить томкат для тестинга" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>rs.getString(&quot;Title&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rs.getString(1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/Java/Project/Login.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,84 +797,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/User/Main_logic_user.java" />
-    <entry file="file://$PROJECT_DIR$/Project/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/MainAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Admin.java" />
+    <entry file="file://$PROJECT_DIR$/Project/MainAdmin.java" />
     <entry file="file://$PROJECT_DIR$/out/production/project/User/Start" />
     <entry file="file://$PROJECT_DIR$/out/production/project/User/MainPageContentMarkup.class" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/SimpleUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="105" column="68" lean-forward="true" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/UserLogin.java" />
+    <entry file="file://$PROJECT_DIR$/Project/SimpleUser.java" />
+    <entry file="file://$PROJECT_DIR$/Project/Operator.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/OrderData.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="273" column="33" selection-start-line="273" selection-start-column="33" selection-end-line="273" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation_Window.java" />
-    <entry file="file://$PROJECT_DIR$/Project/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="65" column="31" selection-start-line="64" selection-start-column="7" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Login.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -703,76 +819,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="e#934#935#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SERVER/SERVER.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        <state relative-caret-position="544">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/SERVER/Abuse_api.class">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="51">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CLIENTS/Operator/Test.java" />
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="74" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/RationDataFromDatabase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/SERVER/Abuse_api.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/API.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="88" column="28" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/hessian-4.0.51.jar!/com/caucho/hessian/server/HessianSkeleton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SERVER/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Ration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="100" column="23" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="23" />
+          <folding>
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3544#3545#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3920#3921#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+            <element signature="e#4002#4003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2095#2096#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SERVER/src/Abuse_api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1544814098919" expanded="true" signature="3999:4232" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="110">
+          <caret line="235" column="21" selection-start-line="235" selection-start-column="21" selection-end-line="235" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1544814398179" expanded="true" signature="17613:18084" ph="..." />
+            <marker date="1544978323169" expanded="true" signature="1878:2416" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" column="245" selection-start-line="27" selection-start-column="245" selection-end-line="27" selection-end-column="245" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,10 +995,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -830,12 +1044,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>project</last-edited>
+          <last-edited>SERVER</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -843,7 +1056,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hessian-4.0.51</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -28,7 +28,7 @@ public class MainFormMarkup {
     WebButton myOrders = new WebButton("My orders");
     WebButton profile = new WebButton("Profile");
     WebButton ownRation = new WebButton("Own ration");
-
+    WebButton logout = new WebButton("Logout");
 
     WebFrame mainFrame;
     public WebPanel navPanel = new WebPanel();
@@ -40,7 +40,7 @@ public class MainFormMarkup {
         mainFrame = new WebFrame();
         mainFrame.setSize(MAIN_FRAME_WEIGHT, MAIN_FRAME_HEIGHT);
         mainFrame.add(navPanel);
-        WebLabel logout = new WebLabel("Logout");
+
         logout.setHorizontalAlignment(SwingConstants.CENTER);//
 
         GridLayout gLayout = new GridLayout(5, 0);
@@ -65,6 +65,12 @@ public class MainFormMarkup {
         mainFrame.setTitle("User.Project M");
         mainFrame.setVisible(true);
     }
+
+    public void exit()
+    {
+        this.mainFrame.dispose();
+    }
+
 
     public void setContent(MainPageContentMarkup object)  //Вставка панели контента(контент =
     {                                                     //содержимогу раздела[main page , my orders etc]) в nav
@@ -98,6 +104,10 @@ public class MainFormMarkup {
             }
             case 4: {
                 return ownRation;
+            }
+            case 5:
+            {
+                return logout;
             }
         }
         return null;
