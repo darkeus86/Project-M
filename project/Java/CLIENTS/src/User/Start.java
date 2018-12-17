@@ -1,5 +1,6 @@
 package User;
 
+import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Ration;
 import User.Autorisation.Autorisation;
 import User.Cart.CartMarkup;
@@ -10,29 +11,37 @@ import User.RationMurkup.Rations;
 import User.Registration.Registration;
 import com.alee.extended.image.WebImage;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.MalformedURLException;
 import java.sql.*;
 import java.text.ParseException;
+import java.util.ArrayList;
 
 import Api_Project_M.Request_manager_API;
 import com.caucho.hessian.client.HessianProxyFactory;
 
 public class Start {
     public static String loginId1;
-    public static void main(String args[]) throws ParseException, MalformedURLException {
+    public static void main(String args[]) throws ParseException, MalformedURLException, SQLException, ClassNotFoundException {
         // ТЕСТ СЕРВЛЕТОВ
-//        String serverAddress = "http://localhost:8080/";
-//        HessianProxyFactory factory = new HessianProxyFactory();
-//        Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
-        //$$$$$$$$$$$$$$$$$$$$$$$$
+        String serverAddress = "http://localhost:8080/";
+        HessianProxyFactory factory = new HessianProxyFactory();
+        Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
 
-        //тест базы данных
+        
+        // создаем лист, делаем запрос, запрос заполняет лист, пользуемся листом.
+        ArrayList <OrderInfoOperator> test = new ArrayList<OrderInfoOperator>();
+        test = apiTest.selectInformationOrder();
+        for (int i =0; i < test.size();i++)
+        {
+            System.out.println( test.get(i).getOrderFirstName() +" "+ test.get(i).getOrderSecondName());
+        }
 
-        //########################
 
-        //тест логина Лехи
+
+
 
         Autorisation autorisationWindow = new Autorisation();
         CartMarkup cartMarkup = new CartMarkup();
@@ -41,13 +50,13 @@ public class Start {
         autorisationWindow.getbLogButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //тут будет запрос и проверка наличия пользователя
+
                 String serverAddress = "http://localhost:8080/";
                 HessianProxyFactory factory = new HessianProxyFactory();
                 Request_manager_API apiTest = null;
+
                 boolean validation = false;
 
-                //начало отключения запроса для верстки
 
                 try {
                     apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
@@ -160,13 +169,16 @@ public class Start {
                                 mainPageUserTest.getPanel().setVisible(true);
                             }
                         });
+                        //ЛОГАУТ (5 кнопка навигации mainFrameUser),
+                        // они сами по себе друг за другом идут, тут такой же принцип индексации
 
                         mainFrameUser.getButton(5).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 mainFrameUser.exit();
-                                autorisationWindow.setVisible(true);
-
+                                autorisationWindow.setVisible(true); // по идее должно быть обнуление
+                                // всего и скачок на новое состояние приложения, для нового юзера,
+                                // тут же не создается MainFrameUser User = new MainFrameUser
                             }
                         });
 
@@ -235,13 +247,11 @@ public class Start {
                         e1.printStackTrace();
                     }
                 } else {
-                    // повторная попытка валидации
+                    // повторная попытка валидации, пока не имеет смысла, обычный попап
                 }
             }
         });
 
-
-        System.out.print("test 1");
 
 
         autorisationWindow.getbRegistration().addActionListener(new ActionListener() {
@@ -279,7 +289,6 @@ public class Start {
                             System.out.print(registration.getPfPassword().getText());
 
                             try {
-                                // Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
                                 System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(), pass));
                             } catch (ClassNotFoundException | SQLException e1) {
                                 e1.printStackTrace();
