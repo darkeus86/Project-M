@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50dd164-49a4-43f1-ac24-48f1dc8cf017" name="Default Changelist" comment="коммит всего">
-      <change afterPath="$PROJECT_DIR$/API/src/Api_Project_M/OrderInfoOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SERVER/server/Abuse_api.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,12 +111,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1645">
-              <caret line="180" column="93" selection-start-line="180" selection-start-column="93" selection-end-line="180" selection-end-column="93" />
+            <state relative-caret-position="89">
+              <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1304#1323#0" expanded="true" />
-                <marker date="1545065783085" expanded="true" signature="2144:2682" ph="..." />
+                <marker date="1545066067719" expanded="true" signature="2144:2682" ph="..." />
               </folding>
             </state>
           </provider>
@@ -323,6 +317,24 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="API" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -366,6 +378,14 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="Autorisation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="SERVER" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,7 +413,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545048421931" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545066070874" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SERVER/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -629,7 +649,7 @@
       <workItem from="1544868812013" duration="7251000" />
       <workItem from="1544962194258" duration="13981000" />
       <workItem from="1545044205638" duration="4603000" />
-      <workItem from="1545060113810" duration="5323000" />
+      <workItem from="1545060113810" duration="5578000" />
     </task>
     <task id="LOCAL-00001" summary="сраный гит не дает запустить файл в идиешке до того, как я ег оне свяжу с гитом">
       <created>1542906313119</created>
@@ -642,7 +662,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199644000" />
+    <option name="totallyTimeSpent" value="199899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -652,7 +672,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2927383" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2927383" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
@@ -660,7 +680,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.30983606" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -943,12 +963,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1645">
-          <caret line="180" column="93" selection-start-line="180" selection-start-column="93" selection-end-line="180" selection-end-column="93" />
+        <state relative-caret-position="89">
+          <caret line="90" column="79" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1304#1323#0" expanded="true" />
-            <marker date="1545065783085" expanded="true" signature="2144:2682" ph="..." />
+            <marker date="1545066067719" expanded="true" signature="2144:2682" ph="..." />
           </folding>
         </state>
       </provider>

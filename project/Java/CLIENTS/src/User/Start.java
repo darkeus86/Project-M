@@ -88,7 +88,7 @@ public class Start {
                     mainFrameUser.init();
 
 
-                    WebImage img = new WebImage("C:\\Users\\shut\\Desktop\\cart.png");
+                    WebImage img = new WebImage(".idea/resource/images/cart.png");
 
 
                     try {
