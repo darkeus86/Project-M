@@ -1,5 +1,8 @@
 package Operator;
 
+import Api_Project_M.CourierInfoOperator;
+import Api_Project_M.OrderInfoOperator;
+import Api_Project_M.Request_manager_API;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
@@ -7,9 +10,13 @@ import com.alee.laf.rootpane.WebFrame;
 import com.alee.laf.scroll.WebScrollPane;
 import com.alee.laf.tabbedpane.WebTabbedPane;
 import com.alee.laf.table.WebTable;
+import com.caucho.hessian.client.HessianProxyFactory;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.net.MalformedURLException;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class Operator extends WebFrame {
 
@@ -69,8 +76,36 @@ public class Operator extends WebFrame {
         setResizable(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(Operator.EXIT_ON_CLOSE);
-        String str = new String("");
-        myOrdersTableModel.addData(str);
+
+        String serverAddress = "http://localhost:8080/";
+        HessianProxyFactory factory = new HessianProxyFactory();
+        Request_manager_API apiTest = null;
+
+        try {
+            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+        } catch (MalformedURLException e1) {
+            e1.printStackTrace();
+        }
+
+        ArrayList<OrderInfoOperator> orderInfo = new ArrayList<OrderInfoOperator>();
+        try {
+            orderInfo = apiTest.selectInformationOrder();
+        } catch (ClassNotFoundException e1) {
+            e1.printStackTrace();
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+
+        //Заполняем таблицу
+        String[] str = new String[3];
+        for (int i =0; i < orderInfo.size();i++)
+        {
+            str[0] = Integer.toString(orderInfo.get(i).getOrderId());
+            str[1] = orderInfo.get(i).getOrderTitle();
+            str[2] = orderInfo.get(i).getOrderDate() + orderInfo.get(i).getOrderTime();
+            myOrdersTableModel.addData(str);
+        }
+
         int row = myOrdersTable.getSelectedRow();
         if(row == -1){
 
@@ -80,27 +115,78 @@ public class Operator extends WebFrame {
             desiredtimes = (String)myOrdersTable.getValueAt(row, 3);
         }
 
+        //Слушаем нажатия мыши по таблице
         myOrdersTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                System.out.print("test 1");
                 if(e.getClickCount() == 2) {
-                    System.out.print("test 2");
                     int row = myOrdersTable.getSelectedRow();
+                    //Проверяем попал ли пользователь по строке
                     if(row == -1){
 
                     }
                     else
                     {
-                        System.out.print("test 3");
-                        desiredtimes = (String)myOrdersTable.getValueAt(row, 3);
+                        String serverAddress = "http://localhost:8080/";
+                        HessianProxyFactory factory = new HessianProxyFactory();
+                        Request_manager_API apiTest = null;
+
+                        try {
+                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                        } catch (MalformedURLException e1) {
+                            e1.printStackTrace();
+                        }
+
+                        ArrayList<OrderInfoOperator> orderInfo = new ArrayList<OrderInfoOperator>();
+                        try {
+                            orderInfo = apiTest.selectInformationOrder();
+                        } catch (ClassNotFoundException e1) {
+                            e1.printStackTrace();
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+
+                        ArrayList<CourierInfoOperator> courierInfo = new ArrayList<>();
+                        try {
+                            courierInfo = apiTest.selectInformationCourier();
+                        } catch (ClassNotFoundException e1) {
+                            e1.printStackTrace();
+                        } catch (SQLException e1) {
+                            e1.printStackTrace();
+                        }
+
+                        //Получаем данные из БД
+                        int orderId = Integer.valueOf(myOrdersTable.getValueAt(row, 0).toString());
+                        firstnames = orderInfo.get(orderId).getOrderFirstName();
+                        secondnames = orderInfo.get(orderId).getOrderSecondName();
+                        desiredtimes = orderInfo.get(orderId).getOrderDate() + " " + orderInfo.get(orderId).getOrderTime();
+                        addresstr = orderInfo.get(orderId).getOrderCity() + " " + orderInfo.get(orderId).getOrderStreet()
+                                + " " + orderInfo.get(orderId).getOrderHouse() + " " +
+                                orderInfo.get(orderId).getOrderHousing() + " " + orderInfo.get(orderId).getOrderRoom();
+                        phones = orderInfo.get(orderId).getOrderPhone();
+                        titles = orderInfo.get(orderId).getOrderTitle();
+                        firstcours = courierInfo.get(1).getOperatorFirstName();
+                        secondcours = courierInfo.get(1).getOperatorSecondName();
+                        phonecours = courierInfo.get(1).getOperatorPhone();
                     }
+
+                    //Заполняем данные правой панели
                     desiredtime.setText("Desired delivery time: " + desiredtimes);
+                    firstname.setText("First name: " + firstnames);
+                    secondname.setText("Second name: " + secondnames);
+                    adress.setText("Address: " + addresstr);
+                    desiredtime.setText("Desired delivery time: " + desiredtimes);
+                    phone.setText("Phone:" + phones);
+                    title.setText("Title: " + titles);
+                    firstcour.setText("First name: " + firstcours);
+                    secondcour.setText("Second name: " + secondcours);
+                    phonecour.setText("Phone: " + phonecours);
                 }
             }
         });
         System.out.print(desiredtimes);
 
+        //Создаем констреинтс
         c.anchor = GridBagConstraints.WEST;
         c.fill   = GridBagConstraints.BOTH;
         c.gridheight = 1;
@@ -130,18 +216,21 @@ public class Operator extends WebFrame {
 
         panelRight.setLayout(gridBagLayoutRight);
 
-        firstname.setText("First name: " + firstnames);
-        secondname.setText("Second name: " + secondnames);
-        adress.setText("Address: " + addresstr);
-        desiredtime.setText("Desired delivery time: " + desiredtimes);
-        phone.setText("Phone: " + phones);
-        title.setText("Title: " + titles);
+        //Формуируем щаблон правой панели
+        firstname.setText("First name: ");
+        secondname.setText("Second name: ") ;
+        adress.setText("Address: ");
+        desiredtime.setText("Desired delivery time: ");
+        phone.setText("Phone: ");
+        title.setText("Title: ");
         commentary.setText("Commentary: ");
-        firstcour.setText("First name: " + firstcours);
-        secondcour.setText("Second name: " + secondcours);
-        phonecour.setText("Phone: " + phonecours);
-        status.setText(statustr);
+        firstcour.setText("First name: ");
+        secondcour.setText("Second name: ");
+        phonecour.setText("Phone: ");
+        status.setText(null);
 
+
+        //Форматирование текста
         customer.setFont(new Font("Times New Roman", Font.BOLD, 16));
         firstname.setFont(new Font("Times New Roman", Font.PLAIN, 16));
         secondname.setFont(new Font("Times New Roman", Font.PLAIN, 16));
@@ -160,6 +249,7 @@ public class Operator extends WebFrame {
 
         status.setForeground(new Color(31, 102, 13));
 
+        //Заполняем панель
         panelRight.add(customer, cRight);
         panelRight.add(firstname, cRight);
         panelRight.add(secondname, cRight);
@@ -197,7 +287,15 @@ public class Operator extends WebFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                main(null);
+                try {
+                    main(null);
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                } catch (ClassNotFoundException e1) {
+                    e1.printStackTrace();
+                } catch (MalformedURLException e1) {
+                    e1.printStackTrace();
+                }
             }
         });
 
@@ -224,8 +322,9 @@ public class Operator extends WebFrame {
         operator.setVisible(true);
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException, MalformedURLException {
+
+
         login.launch();
         login.logButton.addActionListener(new ActionListener() {
             @Override
