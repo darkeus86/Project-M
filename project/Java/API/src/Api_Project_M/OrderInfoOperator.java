@@ -20,9 +20,6 @@ public class OrderInfoOperator implements Serializable {
 
 
 
-
-
-
     public int getOrderId() {
         return orderId;
     }
@@ -95,12 +92,12 @@ public class OrderInfoOperator implements Serializable {
         this.orderTitle = orderTitle;
     }
 
-    public String getOrederFirstName() {
+    public String getOrderFirstName() {
         return orderFirstName;
     }
 
-    public void setOrederFirstName(String orederFirstName) {
-        this.orderFirstName = orederFirstName;
+    public void setOrderFirstName(String orderFirstName) {
+        this.orderFirstName = orderFirstName;
     }
 
     public String getOrderSecondName() {
@@ -132,22 +129,6 @@ public class OrderInfoOperator implements Serializable {
     }
 
     public void setOrderPrice(int price) {
-        this.price = price;
-    }
-
-    public String getOrderFirstName() {
-        return orderFirstName;
-    }
-
-    public void setOrderFirstName(String orderFirstName) {
-        this.orderFirstName = orderFirstName;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
         this.price = price;
     }
 }

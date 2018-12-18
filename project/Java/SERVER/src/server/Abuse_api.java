@@ -1,5 +1,6 @@
 package server;
 
+import Api_Project_M.CourierInfoOperator;
 import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Ration;
 import com.caucho.hessian.server.HessianServlet;
@@ -78,7 +79,7 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
     }
 
 
-    public boolean selectValidationAutorisation(String loginFromUser, String passwordFromUser) {
+    public boolean selectValidationAuthorization(String loginFromUser, String passwordFromUser) {
         try {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://localhost:5432/Orders";
@@ -150,11 +151,41 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
                 order.setOrderTime(rs.getString("time"));
                 order.setOrderTitle(rs.getString("rationTitle"));
                 order.setOrderPrice(Integer.parseInt(rs.getString("price")));
-                order.setOrederFirstName(rs.getString("personFirstName"));
+                order.setOrderFirstName(rs.getString("personFirstName"));
                 order.setOrderSecondName(rs.getString("personSecondName"));
                 order.setOrderPhone(rs.getString("phone"));
                 order.setOrderLoginId(rs.getString("loginId"));
                 ordersList.add(order);
+        }
+        rs.close();
+        con.close();
+        return ordersList;
+
+
+    }
+
+
+    @Override
+    public ArrayList<CourierInfoOperator> selectInformationCourier() throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Orders";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ArrayList<CourierInfoOperator> ordersList = new ArrayList<CourierInfoOperator>();
+
+        ResultSet rs = statement.executeQuery("SELECT *FROM public.\"Couriers\";");
+
+
+        while (rs.next()){
+            CourierInfoOperator courier = new CourierInfoOperator();
+            courier.setOperatorId(Integer.parseInt(rs.getString("id")));
+            courier.setOperatorFirstName(rs.getString("personFirstName"));
+            courier.setOperatorSecondName(rs.getString("personSecondName"));
+            courier.setOperatorPhone(rs.getString("phone"));
+            ordersList.add(courier);
         }
         rs.close();
         con.close();

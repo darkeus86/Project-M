@@ -64,7 +64,7 @@ public class Start {
                     e2.printStackTrace();
                 }
                 String pass = new String(autorisationWindow.getPassword().getPassword());
-                validation = apiTest.selectValidationAutorisation(autorisationWindow.getLogin().getText(), pass);
+                validation = apiTest.selectValidationAuthorization(autorisationWindow.getLogin().getText(), pass);
                 System.out.print("validation from autor:" + validation);
 
                 if (!validation) {
