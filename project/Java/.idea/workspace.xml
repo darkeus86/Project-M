@@ -7,49 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50dd164-49a4-43f1-ac24-48f1dc8cf017" name="Default Changelist" comment="коммит всего">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Autorisation/Autorisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Registration/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/OrderInfoOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/OrderInfoOperator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/Request_manager_API.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/Request_manager_API.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/Abuse_api.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/Abuse_api.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/OrderInfoOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/Api_Project_M/OrderInfoOperator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Autorisation/Autorisation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Registration/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/Intermediate_Picture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/Intermediate_Picture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Pop_up_windows/Payment_Pop_Up.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Pop_up_windows/Payment_Pop_Up.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SERVER/server/Abuse_api.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SERVER/server/Abuse_api.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,11 +60,12 @@
     <session id="-1238795460">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.121" value="1" />
           <entry key="project.open.time.139" value="1" />
           <entry key="project.open.time.201" value="1" />
+          <entry key="project.open.time.210" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -107,10 +80,11 @@
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.56" value="2" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,7 +92,7 @@
           <entry key="Start" value="1" />
           <entry key="class" value="9" />
           <entry key="iml" value="2" />
-          <entry key="java" value="77" />
+          <entry key="java" value="79" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -126,7 +100,7 @@
         <counts>
           <entry key="CLASS" value="9" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="79" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -136,14 +110,14 @@
           <entry key="Start" value="1" />
           <entry key="class" value="31" />
           <entry key="dummy" value="105" />
-          <entry key="java" value="27956" />
+          <entry key="java" value="28159" />
           <entry key="txt" value="360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="31" />
-          <entry key="JAVA" value="27954" />
+          <entry key="JAVA" value="28157" />
           <entry key="PLAIN_TEXT" value="466" />
           <entry key="SQL" value="2" />
         </counts>
@@ -152,11 +126,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="284" column="62" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
+            <state relative-caret-position="182">
+              <caret line="234" column="45" selection-start-line="234" selection-start-column="45" selection-end-line="234" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,11 +139,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+              <folding>
+                <element signature="e#3548#3549#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="352" column="62" selection-start-line="352" selection-start-column="62" selection-end-line="352" selection-end-column="62" />
+            <state relative-caret-position="389">
+              <caret line="174" column="53" lean-forward="true" selection-start-line="174" selection-start-column="53" selection-end-line="174" selection-end-column="53" />
               <folding>
+                <element signature="e#3554#3573#0" expanded="true" />
                 <element signature="e#12002#12003#0" expanded="true" />
                 <element signature="e#12048#12049#0" expanded="true" />
                 <element signature="e#12762#12763#0" expanded="true" />
@@ -182,14 +178,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="208" selection-start-line="208" selection-end-line="208" />
+            <state relative-caret-position="-1108">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding>
                 <element signature="method#insertOrderRequest#0;class#Abuse_api#0" />
                 <element signature="method#insertSimpleUser#0;class#Abuse_api#0" />
                 <element signature="method#selectValidationRegistration#0;class#Abuse_api#0" />
                 <element signature="method#selectInformationRation#0;class#Abuse_api#0" />
-                <element signature="method#selectInformationOrder#0;class#Abuse_api#0" />
               </folding>
             </state>
           </provider>
@@ -216,7 +211,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="714">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
@@ -268,14 +263,12 @@
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Project/SimpleUser.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Project/Operator.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Project/UserLogin.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java" />
         <option value="$PROJECT_DIR$/Project/SimpleUser.java" />
         <option value="$PROJECT_DIR$/src/Project/SimpleUser.java" />
         <option value="$PROJECT_DIR$/src/Project/Operator.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation_Window.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" />
         <option value="$PROJECT_DIR$/SERVER/src/Abuse_api.java" />
@@ -288,9 +281,11 @@
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" />
         <option value="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java" />
         <option value="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
       </list>
     </option>
   </component>
@@ -307,7 +302,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="434" />
     <option name="y" value="-13" />
     <option name="width" value="683" />
@@ -319,7 +314,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,6 +329,19 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="API" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -346,6 +353,13 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Api_Project_M" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,6 +367,13 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Operator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -360,6 +381,22 @@
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="Cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="Pop_up_windows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -383,14 +420,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545213277112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545242889649" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -429,7 +467,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.Operator">
     <configuration name="Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Operator.Operator" />
       <module name="CLIENTS" />
@@ -578,8 +616,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Start" />
         <item itemvalue="Application.Operator" />
+        <item itemvalue="Application.Start" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.SimpleUser" />
         <item itemvalue="Application.Payment_Pop_Up" />
@@ -627,7 +665,9 @@
       <workItem from="1544962194258" duration="13981000" />
       <workItem from="1545044205638" duration="4603000" />
       <workItem from="1545060113810" duration="5578000" />
-      <workItem from="1545209715618" duration="2984000" />
+      <workItem from="1545209715618" duration="3788000" />
+      <workItem from="1545224059562" duration="2067000" />
+      <workItem from="1545237744010" duration="3006000" />
     </task>
     <task id="LOCAL-00001" summary="сраный гит не дает запустить файл в идиешке до того, как я ег оне свяжу с гитом">
       <created>1542906313119</created>
@@ -640,18 +680,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202883000" />
+    <option name="totallyTimeSpent" value="208760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.29727685" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30635402" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
@@ -659,9 +698,9 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.16229509" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" weight="0.34590164" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.0852459" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.109836064" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -860,20 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
@@ -899,23 +924,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
           <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="234" column="45" selection-start-line="234" selection-start-column="45" selection-end-line="234" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/Intermediate_Picture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="187">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Pop_up_windows/Payment_Pop_Up.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="1547">
+          <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+          <folding>
+            <element signature="e#3548#3549#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -926,39 +961,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
+        <state relative-caret-position="-1108">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="method#insertOrderRequest#0;class#Abuse_api#0" />
             <element signature="method#insertSimpleUser#0;class#Abuse_api#0" />
             <element signature="method#selectValidationRegistration#0;class#Abuse_api#0" />
             <element signature="method#selectInformationRation#0;class#Abuse_api#0" />
-            <element signature="method#selectInformationOrder#0;class#Abuse_api#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="352" column="62" selection-start-line="352" selection-start-column="62" selection-end-line="352" selection-end-column="62" />
+        <state relative-caret-position="389">
+          <caret line="174" column="53" lean-forward="true" selection-start-line="174" selection-start-column="53" selection-end-line="174" selection-end-column="53" />
           <folding>
+            <element signature="e#3554#3573#0" expanded="true" />
             <element signature="e#12002#12003#0" expanded="true" />
             <element signature="e#12048#12049#0" expanded="true" />
             <element signature="e#12762#12763#0" expanded="true" />
             <element signature="e#12813#12814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="284" column="62" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

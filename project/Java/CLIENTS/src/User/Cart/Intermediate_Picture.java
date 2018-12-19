@@ -15,7 +15,7 @@ public class Intermediate_Picture {
 
     public Intermediate_Picture()
     {
-        img = new WebImage("C:\\Users\\shut\\Desktop\\cart.png");
+        img = new WebImage(".idea/resource/images/cart.png");
         intermediatePanel = new WebPanel();
         intermediatePanel.setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();

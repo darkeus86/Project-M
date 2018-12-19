@@ -152,7 +152,7 @@ public class Operator extends WebFrame {
                         }
 
                         //Получаем данные из БД
-                        int orderId = Integer.valueOf(myOrdersTable.getValueAt(row, 0).toString());
+                        int orderId = Integer.valueOf(myOrdersTable.getValueAt(row, 0).toString())-1;
                         firstnames = orderInfo.get(orderId).getOrderFirstName();
                         secondnames = orderInfo.get(orderId).getOrderSecondName();
                         desiredtimes = orderInfo.get(orderId).getOrderDate() + " " + orderInfo.get(orderId).getOrderTime();

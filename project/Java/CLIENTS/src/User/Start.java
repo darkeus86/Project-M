@@ -209,12 +209,14 @@ public class Start {
                                             }
 
 
+
                                             try {
+                                                int id = apiTest.selectIdPositionForOrders();
                                                 System.out.print(apiTest.insertOrderRequest(
-                                                        0,
+                                                        id,
                                                         cartMarkup.getCalendar().getDate().toString(),
-                                                        cartMarkup.getCbCities().toString(),
-                                                        cartMarkup.getCbStreets().toString(),
+                                                        cartMarkup.getCbCities().getSelectedItem().toString(),
+                                                        cartMarkup.getCbStreets().getSelectedItem().toString(),
                                                         Integer.parseInt(cartMarkup.getTfHouse().getText()),
                                                         Integer.parseInt(cartMarkup.getTfHousing().getText()),
                                                         Integer.parseInt(cartMarkup.getTfRoom().getText()),
@@ -229,6 +231,7 @@ public class Start {
                                                 e1.printStackTrace();
                                             } catch (SQLException e1) {
                                                 e1.printStackTrace();
+
                                             }
 
 //

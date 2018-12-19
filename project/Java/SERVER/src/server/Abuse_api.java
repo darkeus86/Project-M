@@ -44,7 +44,10 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
         Statement statement = con.createStatement();
 
         ResultSet rs = statement.executeQuery("SELECT COUNT(1) FROM public.\"SimpleUsers\";");
+        rs.next();
         id = Integer.parseInt(rs.getString("count"));
+        rs.close();
+        con.close();
         return id;
     }
 
