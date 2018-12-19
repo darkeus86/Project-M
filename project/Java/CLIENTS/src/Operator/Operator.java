@@ -3,6 +3,8 @@ package Operator;
 import Api_Project_M.CourierInfoOperator;
 import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Request_manager_API;
+import Autorisation_and_registration.Autorisation.Autorisation;
+import Autorisation_and_registration.Registration.Registration;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
@@ -57,7 +59,7 @@ public class Operator extends WebFrame {
     String desiredtimes = Content.getDesiredTime();
     String phones = Content.getPhone();
     String titles = Content.getTitle();
-    String firstcours =  Content.getFirstName();
+    String firstcours = Content.getFirstName();
     String secondcours = Content.getSecondName();
     String phonecours = Content.getPhone();
     String statustr = Content.getStatus();
@@ -69,10 +71,9 @@ public class Operator extends WebFrame {
     GridBagLayout gridBagLayout = new GridBagLayout();
     GridBagLayout gridBagLayoutRight = new GridBagLayout();
 
-    Operator()
-    {
+    Operator() {
 
-        setSize(1250,700);
+        setSize(1250, 700);
         setResizable(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(Operator.EXIT_ON_CLOSE);
@@ -98,8 +99,7 @@ public class Operator extends WebFrame {
 
         //Заполняем таблицу
         String[] str = new String[3];
-        for (int i =0; i < orderInfo.size();i++)
-        {
+        for (int i = 0; i < orderInfo.size(); i++) {
             str[0] = Integer.toString(orderInfo.get(i).getOrderId());
             str[1] = orderInfo.get(i).getOrderTitle();
             str[2] = orderInfo.get(i).getOrderDate() + orderInfo.get(i).getOrderTime();
@@ -107,26 +107,22 @@ public class Operator extends WebFrame {
         }
 
         int row = myOrdersTable.getSelectedRow();
-        if(row == -1){
+        if (row == -1) {
 
-        }
-        else
-        {
-            desiredtimes = (String)myOrdersTable.getValueAt(row, 3);
+        } else {
+            desiredtimes = (String) myOrdersTable.getValueAt(row, 3);
         }
 
         //Слушаем нажатия мыши по таблице
         myOrdersTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(e.getClickCount() == 2) {
+                if (e.getClickCount() == 2) {
                     int row = myOrdersTable.getSelectedRow();
                     //Проверяем попал ли пользователь по строке
-                    if(row == -1){
+                    if (row == -1) {
 
-                    }
-                    else
-                    {
+                    } else {
                         String serverAddress = "http://localhost:8080/";
                         HessianProxyFactory factory = new HessianProxyFactory();
                         Request_manager_API apiTest = null;
@@ -188,9 +184,9 @@ public class Operator extends WebFrame {
 
         //Создаем констреинтс
         c.anchor = GridBagConstraints.WEST;
-        c.fill   = GridBagConstraints.BOTH;
+        c.fill = GridBagConstraints.BOTH;
         c.gridheight = 1;
-        c.gridwidth  = 1;
+        c.gridwidth = 1;
         c.gridx = GridBagConstraints.RELATIVE;
         c.gridy = GridBagConstraints.RELATIVE;
         c.insets = new Insets(0, 0, 0, 0);
@@ -218,7 +214,7 @@ public class Operator extends WebFrame {
 
         //Формуируем щаблон правой панели
         firstname.setText("First name: ");
-        secondname.setText("Second name: ") ;
+        secondname.setText("Second name: ");
         adress.setText("Address: ");
         desiredtime.setText("Desired delivery time: ");
         phone.setText("Phone: ");
@@ -260,7 +256,8 @@ public class Operator extends WebFrame {
         panelRight.add(ration, cRight);
         panelRight.add(title, cRight);
         panelRight.add(courier, cRight);
-        panelRight.add(firstcour, cRight);;
+        panelRight.add(firstcour, cRight);
+        ;
         panelRight.add(secondcour, cRight);
         panelRight.add(phonecour, cRight);
         panelRight.add(current, cRight);
@@ -316,22 +313,90 @@ public class Operator extends WebFrame {
     }
 
 
-    public void launch(Login login)
-    {
+    public void launch(Login login) {
         Operator operator = new Operator();
         operator.setVisible(true);
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException, MalformedURLException {
 
+        Autorisation autorisationWindow = new Autorisation();
 
-        login.launch();
-        login.logButton.addActionListener(new ActionListener() {
+
+        autorisationWindow.getbLogButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String serverAddress = "http://localhost:8080/";
+                HessianProxyFactory factory = new HessianProxyFactory();
+                Request_manager_API apiTest = null;
 
-                operator.launch(login);
+                boolean validation = false;
+
+
+                try {
+                    apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                } catch (MalformedURLException e2) {
+                    e2.printStackTrace();
+                }
+                String pass = new String(autorisationWindow.getPassword().getPassword());
+                validation = apiTest.selectValidationAuthorization(autorisationWindow.getLogin().getText(), pass);
+                System.out.print("validation from autor:" + validation);
+
+                if (!validation) {
+                    autorisationWindow.dispose();
+                    operator.launch(login);
+                }
             }
         });
+
+
+        autorisationWindow.getbRegistration().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                autorisationWindow.dispose();
+                Registration registration = new Registration();
+
+                registration.getbCancel().addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        registration.dispose();
+                        autorisationWindow.setVisible(true);
+                    }
+                });
+                registration.getbRegistration().addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String serverAddress = "http://localhost:8080/";
+                        HessianProxyFactory factory = new HessianProxyFactory();
+                        Request_manager_API apiTest = null;
+                        try {
+                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                        } catch (MalformedURLException e1) {
+                            e1.printStackTrace();
+                        }
+                        System.out.print(apiTest.selectValidationRegistration(registration.getLogin().getText()));
+                        String pass = new String(registration.getPfPassword().getPassword());
+                        String repeatPass = new String(registration.getPfRepeatPassword().getPassword());
+                        boolean validation = (apiTest.selectValidationRegistration(registration.getLogin().getText()));
+
+                        if ((validation) && (pass.equals(repeatPass))) {
+                            System.out.print("registration test");
+                            System.out.print(registration.getPfPassword().getText());
+                            registration.dispose();
+                            autorisationWindow.setVisible(true);
+                            try {
+                                System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(), pass));
+                            } catch (ClassNotFoundException | SQLException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
+                    }
+                });
+            }
+        });
+
     }
 }
+
+
+

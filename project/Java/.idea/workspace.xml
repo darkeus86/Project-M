@@ -6,20 +6,64 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d50dd164-49a4-43f1-ac24-48f1dc8cf017" name="Default Changelist" comment="коммит всего" />
+    <list default="true" id="d50dd164-49a4-43f1-ac24-48f1dc8cf017" name="Default Changelist" comment="коммит всего">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Autorisation/Autorisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Registration/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/OrderInfoOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/OrderInfoOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/Request_manager_API.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Api_Project_M/Request_manager_API.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/Abuse_api.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/Abuse_api.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/OrderInfoOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/Api_Project_M/OrderInfoOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Autorisation/Autorisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Registration/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SERVER/server/Abuse_api.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SERVER/server/Abuse_api.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Java$main_form.ic" NAME="main_form Coverage Results" MODIFIED="1542832367250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Java$Start.ic" NAME="Start Coverage Results" MODIFIED="1544871069363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>User.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Java$Start.ic" NAME="Start Coverage Results" MODIFIED="1544871069363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Java$main_form.ic" NAME="main_form Coverage Results" MODIFIED="1542832367250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>User.*</FILTER>
     </SUITE>
   </component>
@@ -49,6 +93,7 @@
           <entry key="project.open.time.121" value="1" />
           <entry key="project.open.time.139" value="1" />
           <entry key="project.open.time.201" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="3" />
@@ -65,7 +110,7 @@
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,7 +118,7 @@
           <entry key="Start" value="1" />
           <entry key="class" value="9" />
           <entry key="iml" value="2" />
-          <entry key="java" value="74" />
+          <entry key="java" value="77" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -81,7 +126,7 @@
         <counts>
           <entry key="CLASS" value="9" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="74" />
+          <entry key="JAVA" value="77" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -91,14 +136,14 @@
           <entry key="Start" value="1" />
           <entry key="class" value="31" />
           <entry key="dummy" value="105" />
-          <entry key="java" value="27491" />
+          <entry key="java" value="27956" />
           <entry key="txt" value="360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="31" />
-          <entry key="JAVA" value="27489" />
+          <entry key="JAVA" value="27954" />
           <entry key="PLAIN_TEXT" value="466" />
           <entry key="SQL" value="2" />
         </counts>
@@ -107,11 +152,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="309">
+              <caret line="284" column="62" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,35 +164,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1349">
-              <caret line="322" column="5" lean-forward="true" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+            <state relative-caret-position="365">
+              <caret line="352" column="62" selection-start-line="352" selection-start-column="62" selection-end-line="352" selection-end-column="62" />
               <folding>
-                <element signature="e#11396#11397#0" expanded="true" />
-                <element signature="e#11442#11443#0" expanded="true" />
-                <element signature="e#12156#12157#0" expanded="true" />
-                <element signature="e#12207#12208#0" expanded="true" />
+                <element signature="e#12002#12003#0" expanded="true" />
+                <element signature="e#12048#12049#0" expanded="true" />
+                <element signature="e#12762#12763#0" expanded="true" />
+                <element signature="e#12813#12814#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuBar.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="1330">
+              <caret line="208" selection-start-line="208" selection-end-line="208" />
+              <folding>
+                <element signature="method#insertOrderRequest#0;class#Abuse_api#0" />
+                <element signature="method#insertSimpleUser#0;class#Abuse_api#0" />
+                <element signature="method#selectValidationRegistration#0;class#Abuse_api#0" />
+                <element signature="method#selectInformationRation#0;class#Abuse_api#0" />
+                <element signature="method#selectInformationOrder#0;class#Abuse_api#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyOrdersTable.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="782">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -176,7 +246,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -215,11 +285,12 @@
         <option value="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" />
         <option value="$PROJECT_DIR$/API/src/Api_Project_M/OrderInfoOperator.java" />
         <option value="$PROJECT_DIR$/API/src/Api_Project_M/CourierInfoOperator.java" />
-        <option value="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" />
-        <option value="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" />
+        <option value="$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java" />
+        <option value="$PROJECT_DIR$/SERVER/src/server/Abuse_api.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
       </list>
     </option>
   </component>
@@ -236,7 +307,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="434" />
     <option name="y" value="-13" />
     <option name="width" value="683" />
@@ -248,6 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,6 +335,17 @@
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,21 +359,38 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Operator" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545066070874" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545213277112" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -329,7 +429,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Operator">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Operator.Operator" />
       <module name="CLIENTS" />
@@ -339,6 +439,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Payment_Pop_Up" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.Pop_up_windows.Payment_Pop_Up" />
@@ -349,6 +452,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SimpleUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Project.SimpleUser" />
@@ -359,6 +465,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="User.Start" />
@@ -369,6 +478,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Operator.Test" />
@@ -379,6 +491,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -454,6 +569,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Tomcat Server.Server" />
       <item itemvalue="Application.Start" />
       <item itemvalue="Application.Payment_Pop_Up" />
       <item itemvalue="Application.SimpleUser" />
@@ -462,8 +578,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Operator" />
         <item itemvalue="Application.Start" />
+        <item itemvalue="Application.Operator" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.SimpleUser" />
         <item itemvalue="Application.Payment_Pop_Up" />
@@ -511,6 +627,7 @@
       <workItem from="1544962194258" duration="13981000" />
       <workItem from="1545044205638" duration="4603000" />
       <workItem from="1545060113810" duration="5578000" />
+      <workItem from="1545209715618" duration="2984000" />
     </task>
     <task id="LOCAL-00001" summary="сраный гит не дает запустить файл в идиешке до того, как я ег оне свяжу с гитом">
       <created>1542906313119</created>
@@ -523,73 +640,74 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199899000" />
+    <option name="totallyTimeSpent" value="202883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3089172" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.20983607" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" weight="0.32908705" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
-      <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29270834" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.29727685" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.20983607" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.16229509" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.0852459" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3295082" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" weight="0.48360655" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
       <window_info id="UI Designer" order="1" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.20983607" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.30983606" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2881997" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.20983607" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" weight="0.48360655" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.30983606" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3295082" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,19 +721,6 @@
     <MESSAGE value="сраный гит не дает запустить файл в идиешке до того, как я ег оне свяжу с гитом" />
     <MESSAGE value="Надеюсь сервер и апи не прилетят&#10;а так, чуток пофиксил некоторые недостатки&#10;и добавил всплывающие окно при нажатие на confirm. &#10;думаю в дисе появсю как накатить томкат для тестинга" />
     <option name="LAST_COMMIT_MESSAGE" value="Надеюсь сервер и апи не прилетят&#10;а так, чуток пофиксил некоторые недостатки&#10;и добавил всплывающие окно при нажатие на confirm. &#10;думаю в дисе появсю как накатить томкат для тестинга" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java</url>
-          <line>169</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -632,30 +737,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Java/Project/Login.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -675,7 +756,7 @@
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/OrderData.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation_Window.java" />
     <entry file="file://$PROJECT_DIR$/Project/Login.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Registration/Registration.java" />
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Registration/Registration.java" />
     <entry file="file://$PROJECT_DIR$/SERVER/SERVER.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -723,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Content.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
@@ -772,7 +846,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Autorisation/Autorisation.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Autorisation_and_registration/Autorisation/Autorisation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-555">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
@@ -807,21 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="103" column="32" lean-forward="true" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
-          <folding>
-            <element signature="method#insertOrderRequest#0;class#Abuse_api#0" />
-            <element signature="method#insertSimpleUser#0;class#Abuse_api#0" />
-            <element signature="method#selectValidationRegistration#0;class#Abuse_api#0" />
-            <element signature="method#selectInformationRation#0;class#Abuse_api#0" />
-            <element signature="method#selectInformationOrder#0;class#Abuse_api#0" />
-            <element signature="method#selectInformationCourier#0;class#Abuse_api#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -846,40 +905,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="322" column="5" lean-forward="true" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding>
-            <element signature="e#11396#11397#0" expanded="true" />
-            <element signature="e#11442#11443#0" expanded="true" />
-            <element signature="e#12156#12157#0" expanded="true" />
-            <element signature="e#12207#12208#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="782">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Request_manager_API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SERVER/src/server/Abuse_api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+          <folding>
+            <element signature="method#insertOrderRequest#0;class#Abuse_api#0" />
+            <element signature="method#insertSimpleUser#0;class#Abuse_api#0" />
+            <element signature="method#selectValidationRegistration#0;class#Abuse_api#0" />
+            <element signature="method#selectInformationRation#0;class#Abuse_api#0" />
+            <element signature="method#selectInformationOrder#0;class#Abuse_api#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="352" column="62" selection-start-line="352" selection-start-column="62" selection-end-line="352" selection-end-column="62" />
+          <folding>
+            <element signature="e#12002#12003#0" expanded="true" />
+            <element signature="e#12048#12049#0" expanded="true" />
+            <element signature="e#12762#12763#0" expanded="true" />
+            <element signature="e#12813#12814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="284" column="62" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

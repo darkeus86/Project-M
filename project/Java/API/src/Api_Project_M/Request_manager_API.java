@@ -7,7 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public interface Request_manager_API {
-    boolean insertOrderRequest (int id, String date, String city, String street, int house,int housing,int room, String time,String rationTitle,int price,String personName, String personSecondName,String phone,String UserLogin) throws ClassNotFoundException, SQLException;
+    boolean insertOrderRequest(int id, String date, String city, String street, int house, int housing, int room, String time, String rationTitle, int price, String personName, String personSecondName, String phone, String UserLogin) throws ClassNotFoundException, SQLException;
+    int selectIdPositionForOrders() throws SQLException, ClassNotFoundException;
     boolean insertSimpleUser (String login, String password) throws ClassNotFoundException, SQLException;
     boolean selectValidationRegistration(String login);
     boolean selectValidationAuthorization(String login, String password);

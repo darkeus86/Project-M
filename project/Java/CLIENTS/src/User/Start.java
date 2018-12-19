@@ -2,16 +2,14 @@ package User;
 
 import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Ration;
-import User.Autorisation.Autorisation;
+import Autorisation_and_registration.Autorisation.Autorisation;
 import User.Cart.CartMarkup;
 import User.Cart.Intermediate_Picture;
 import User.Pop_up_windows.Payment_Pop_Up;
-import User.RationMurkup.RationDataFromDatabase;
 import User.RationMurkup.Rations;
-import User.Registration.Registration;
+import Autorisation_and_registration.Registration.Registration;
 import com.alee.extended.image.WebImage;
 
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.MalformedURLException;
@@ -68,7 +66,6 @@ public class Start {
                 System.out.print("validation from autor:" + validation);
 
                 if (!validation) {
-
 
                     loginId1 = autorisationWindow.getLogin().getText();
 
@@ -201,6 +198,7 @@ public class Start {
                                     public void actionPerformed(ActionEvent e) {
                                         if (popUp.fieldValidation()) {
                                             //ЗАКАЗ ОПЛАЧЕН! булеан переменная, инифиатор запроса
+                                            popUp.getPaymentFrame().dispose();
                                             String serverAddress = "http://localhost:8080/";
                                             HessianProxyFactory factory = new HessianProxyFactory();
                                             Request_manager_API apiTest = null;
@@ -279,17 +277,16 @@ public class Start {
                         } catch (MalformedURLException e1) {
                             e1.printStackTrace();
                         }
-                        System.out.print(apiTest.selectValidationRegistration(registration.getLogin().getText()));
                         String pass = new String(registration.getPfPassword().getPassword());
                         String repeatPass = new String(registration.getPfRepeatPassword().getPassword());
                         boolean validation = (apiTest.selectValidationRegistration(registration.getLogin().getText()));
 
                         if ((validation) && (pass.equals(repeatPass))) {
-                            System.out.print("registration test");
-                            System.out.print(registration.getPfPassword().getText());
+                            registration.dispose();
+                            autorisationWindow.setVisible(true);
 
                             try {
-                                System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(), pass));
+                               apiTest.insertSimpleUser(registration.getLogin().getText(), pass);
                             } catch (ClassNotFoundException | SQLException e1) {
                                 e1.printStackTrace();
                             }

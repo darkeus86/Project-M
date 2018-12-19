@@ -111,4 +111,7 @@ public class Payment_Pop_Up {
         paymentFrame.pack();
     }
 
+    public WebFrame getPaymentFrame() {
+        return paymentFrame;
+    }
 }

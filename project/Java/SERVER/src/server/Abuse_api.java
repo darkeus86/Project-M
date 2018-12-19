@@ -33,6 +33,21 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
         return false;
     }
 
+    @Override
+    public int selectIdPositionForOrders() throws SQLException, ClassNotFoundException {
+        int id;
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Orders";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ResultSet rs = statement.executeQuery("SELECT COUNT(1) FROM public.\"SimpleUsers\";");
+        id = Integer.parseInt(rs.getString("count"));
+        return id;
+    }
+
     public boolean insertSimpleUser(String loginFromUser, String passwordFromUser) {
         try {
             Class.forName("org.postgresql.Driver");
@@ -168,7 +183,7 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
     @Override
     public ArrayList<CourierInfoOperator> selectInformationCourier() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
-        String url = "jdbc:postgresql://localhost:5432/Orders";
+        String url = "jdbc:postgresql://localhost:5432/Couriers";
         String login = "postgres";
         String password = "postgres";
         Connection con = DriverManager.getConnection(url, login, password);
@@ -190,7 +205,6 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
         rs.close();
         con.close();
         return ordersList;
-
 
     }
 }

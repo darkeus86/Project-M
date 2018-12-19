@@ -1,4 +1,4 @@
-package User.Autorisation;
+package Autorisation_and_registration.Autorisation;
 
 import com.alee.laf.button.*;
 import com.alee.laf.label.WebLabel;
