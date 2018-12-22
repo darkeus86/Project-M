@@ -4,13 +4,13 @@ import Api_Project_M.CourierInfoOperator;
 import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Ration;
 import com.caucho.hessian.server.HessianServlet;
-import Api_Project_M.Request_manager_API;
+import Api_Project_M.RequestManagerApi;
 
 import java.sql.*;
 import java.util.ArrayList;
 
 
-public  class Abuse_api extends HessianServlet implements Request_manager_API {
+public  class AbuseApi extends HessianServlet implements RequestManagerApi {
 
 
     @Override
@@ -43,7 +43,26 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
         Connection con = DriverManager.getConnection(url, login, password);
         Statement statement = con.createStatement();
 
-        ResultSet rs = statement.executeQuery("SELECT COUNT(1) FROM public.\"SimpleUsers\";");
+        ResultSet rs = statement.executeQuery("SELECT COUNT(1) FROM public.\"Orders\";");
+        rs.next();
+        id = Integer.parseInt(rs.getString("count"));
+        rs.close();
+        con.close();
+        return id;
+    }
+
+    @Override
+    public int selectIdPositionCourier() throws SQLException, ClassNotFoundException {
+
+        int id;
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Couriers";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ResultSet rs = statement.executeQuery("SELECT COUNT(1) FROM public.\"Couriers\";");
         rs.next();
         id = Integer.parseInt(rs.getString("count"));
         rs.close();
@@ -61,6 +80,26 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
             Statement statement = con.createStatement();
             statement.executeUpdate("INSERT INTO public.\"SimpleUsers\"" +
                     "VALUES (\'" + loginFromUser + "\',\'" + passwordFromUser + "\');");
+            return true;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean insertCourier(int id,String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/Couriers";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("INSERT INTO public.\"Couriers\"" +
+                    "VALUES (" + id+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +phone+"\');");
             return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -111,16 +150,22 @@ public  class Abuse_api extends HessianServlet implements Request_manager_API {
             );
             rs.next();
             if (rs.getRow() == 0) {
+                rs.close();
+                con.close();
                 return true;
             } else {
+                rs.close();
+                con.close();
                 return false;
             }
+
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return false;
     }
 

@@ -1,4 +1,4 @@
-package Autorisation_and_registration.Autorisation;
+package AuthorizationAndRegistration.Authorization;
 
 import com.alee.laf.button.*;
 import com.alee.laf.label.WebLabel;
@@ -10,7 +10,7 @@ import com.alee.laf.text.WebTextField;
 
 import java.awt.*;
 
-public class Autorisation extends WebFrame {
+public class Authorization extends WebFrame {
 
     public WebLabel welcome = new WebLabel("Welcome");
     public WebButton logButton = new WebButton("Sign in");
@@ -22,7 +22,7 @@ public class Autorisation extends WebFrame {
     public WebButton bRegistration = new WebButton("Registration");
     public WebButton bLogButton = new WebButton("Login");
 
-    public Autorisation()
+    public Authorization()
     {
         super("User.Project-M");
 

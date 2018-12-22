@@ -6,14 +6,14 @@ import com.alee.laf.panel.WebPanel;
 import javax.swing.*;
 import java.awt.*;
 
-public class Intermediate_Picture {
+public class IntermediatePicture {
     WebPanel intermediatePanel;
     WebImage img;
     public WebPanel getIntermediatePanel() {
         return intermediatePanel;
     }
 
-    public Intermediate_Picture()
+    public IntermediatePicture()
     {
         img = new WebImage(".idea/resource/images/cart.png");
         intermediatePanel = new WebPanel();

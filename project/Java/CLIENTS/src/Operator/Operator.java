@@ -2,9 +2,9 @@ package Operator;
 
 import Api_Project_M.CourierInfoOperator;
 import Api_Project_M.OrderInfoOperator;
-import Api_Project_M.Request_manager_API;
-import Autorisation_and_registration.Autorisation.Autorisation;
-import Autorisation_and_registration.Registration.Registration;
+import Api_Project_M.RequestManagerApi;
+import AuthorizationAndRegistration.Authorization.Authorization;
+import AuthorizationAndRegistration.Registration.Registration;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
@@ -25,10 +25,12 @@ public class Operator extends WebFrame {
 
     WebTabbedPane tabbedPane = new WebTabbedPane();
     MenuBar menuBar = new MenuBar();
-    WebScrollPane newOrdersTable = (WebScrollPane) NewOrdersTable.getPreview();
-    MyOrdersTable myOrdersTableModel = new MyOrdersTable();
-    WebTable myOrdersTable = new WebTable(myOrdersTableModel);
-    WebScrollPane myOrdersScroll = new WebScrollPane(myOrdersTable);
+    NewOrdersTable newOrdersTableModel;
+    WebTable newOrdersTable;
+    WebScrollPane newOrdersScroll;
+    MyOrdersTable myOrdersTableModel;
+    WebTable myOrdersTable;
+    WebScrollPane myOrdersScroll;
     WebScrollPane infromation;
     WebPanel panel = new WebPanel();
     WebPanel panelRight = new WebPanel();
@@ -80,32 +82,47 @@ public class Operator extends WebFrame {
 
         String serverAddress = "http://localhost:8080/";
         HessianProxyFactory factory = new HessianProxyFactory();
-        Request_manager_API apiTest = null;
+        RequestManagerApi apiTest = null;
 
         try {
-            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
         } catch (MalformedURLException e1) {
             e1.printStackTrace();
         }
 
+        //Заполняем таблицу
+        String[] str = new String[3];
         ArrayList<OrderInfoOperator> orderInfo = new ArrayList<OrderInfoOperator>();
+        myOrdersTableModel= new MyOrdersTable();
+        newOrdersTableModel= new NewOrdersTable();
         try {
             orderInfo = apiTest.selectInformationOrder();
+            String[][] str1 = new String[orderInfo.size()][3];
+            for (int i = 0; i < orderInfo.size(); i++) {
+                str1[i][0] = Integer.toString(orderInfo.get(i).getOrderId());
+                str1[i][1] = orderInfo.get(i).getOrderTitle();
+                str1[i][2] = orderInfo.get(i).getOrderDate() + " " + orderInfo.get(i).getOrderTime();
+                //myOrdersTableModel.setValueAt(str, i+1, 0);
+                myOrdersTableModel.dataArrayList.add(str);
+            }
+            String[] str2 = new String[3];
+            str2[0] = "Id";
+            str2[1] = "Title";
+            str2[2] = "Time";
+            myOrdersTable = new WebTable(str1, str2);
+            myOrdersTable.setEditable(false);
+            newOrdersTable = new WebTable(str1, str2);
+            newOrdersTable.setEditable(false);
         } catch (ClassNotFoundException e1) {
             e1.printStackTrace();
         } catch (SQLException e1) {
             e1.printStackTrace();
         }
 
-        //Заполняем таблицу
-        String[] str = new String[3];
-        for (int i = 0; i < orderInfo.size(); i++) {
-            str[0] = Integer.toString(orderInfo.get(i).getOrderId());
-            str[1] = orderInfo.get(i).getOrderTitle();
-            str[2] = orderInfo.get(i).getOrderDate() + orderInfo.get(i).getOrderTime();
-            myOrdersTableModel.addData(str);
-        }
 
+        myOrdersScroll = new WebScrollPane(myOrdersTable);
+        newOrdersScroll = new WebScrollPane(newOrdersTable);
+        System.out.println(myOrdersTable.getValueAt(1,0));
         int row = myOrdersTable.getSelectedRow();
         if (row == -1) {
 
@@ -114,21 +131,21 @@ public class Operator extends WebFrame {
         }
 
         //Слушаем нажатия мыши по таблице
-        myOrdersTable.addMouseListener(new MouseAdapter() {
+        newOrdersTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    int row = myOrdersTable.getSelectedRow();
+                    int row = newOrdersTable.getSelectedRow();
                     //Проверяем попал ли пользователь по строке
                     if (row == -1) {
 
                     } else {
                         String serverAddress = "http://localhost:8080/";
                         HessianProxyFactory factory = new HessianProxyFactory();
-                        Request_manager_API apiTest = null;
+                        RequestManagerApi apiTest = null;
 
                         try {
-                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                         } catch (MalformedURLException e1) {
                             e1.printStackTrace();
                         }
@@ -156,9 +173,9 @@ public class Operator extends WebFrame {
                         firstnames = orderInfo.get(orderId).getOrderFirstName();
                         secondnames = orderInfo.get(orderId).getOrderSecondName();
                         desiredtimes = orderInfo.get(orderId).getOrderDate() + " " + orderInfo.get(orderId).getOrderTime();
-                        addresstr = orderInfo.get(orderId).getOrderCity() + " " + orderInfo.get(orderId).getOrderStreet()
-                                + " " + orderInfo.get(orderId).getOrderHouse() + " " +
-                                orderInfo.get(orderId).getOrderHousing() + " " + orderInfo.get(orderId).getOrderRoom();
+                        addresstr = orderInfo.get(orderId).getOrderCity() + ", " + orderInfo.get(orderId).getOrderStreet()
+                                + ", " + orderInfo.get(orderId).getOrderHouse() + ", " +
+                                orderInfo.get(orderId).getOrderHousing() + ", " + orderInfo.get(orderId).getOrderRoom();
                         phones = orderInfo.get(orderId).getOrderPhone();
                         titles = orderInfo.get(orderId).getOrderTitle();
                         firstcours = courierInfo.get(1).getOperatorFirstName();
@@ -177,6 +194,18 @@ public class Operator extends WebFrame {
                     firstcour.setText("First name: " + firstcours);
                     secondcour.setText("Second name: " + secondcours);
                     phonecour.setText("Phone: " + phonecours);
+
+                    takeorder = new WebButton("Take order");
+
+                    panelRight.add(takeorder, cRight);
+
+                    takeorder.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            status.setText("Cooking");
+                            panelRight.remove(takeorder);
+                        }
+                    });
                 }
             }
         });
@@ -223,7 +252,7 @@ public class Operator extends WebFrame {
         firstcour.setText("First name: ");
         secondcour.setText("Second name: ");
         phonecour.setText("Phone: ");
-        status.setText(null);
+        status.setText("Free");
 
 
         //Форматирование текста
@@ -264,7 +293,7 @@ public class Operator extends WebFrame {
         panelRight.add(status, cRight);
 
         tabbedPane.setTabPlacement(WebTabbedPane.LEFT);
-        tabbedPane.addTab("New orders", newOrdersTable);
+        tabbedPane.addTab("New orders", newOrdersScroll);
         tabbedPane.addTab("My orders", myOrdersScroll);
 
         infromation = new WebScrollPane((Component) panelRight);
@@ -320,47 +349,47 @@ public class Operator extends WebFrame {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException, MalformedURLException {
 
-        Autorisation autorisationWindow = new Autorisation();
+        Authorization authorizationWindow = new Authorization();
 
 
-        autorisationWindow.getbLogButton().addActionListener(new ActionListener() {
+        authorizationWindow.getbLogButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String serverAddress = "http://localhost:8080/";
                 HessianProxyFactory factory = new HessianProxyFactory();
-                Request_manager_API apiTest = null;
+                RequestManagerApi apiTest = null;
 
                 boolean validation = false;
 
 
                 try {
-                    apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                    apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                 } catch (MalformedURLException e2) {
                     e2.printStackTrace();
                 }
-                String pass = new String(autorisationWindow.getPassword().getPassword());
-                validation = apiTest.selectValidationAuthorization(autorisationWindow.getLogin().getText(), pass);
+                String pass = new String(authorizationWindow.getPassword().getPassword());
+                validation = apiTest.selectValidationAuthorization(authorizationWindow.getLogin().getText(), pass);
                 System.out.print("validation from autor:" + validation);
 
                 if (!validation) {
-                    autorisationWindow.dispose();
+                    authorizationWindow.dispose();
                     operator.launch(login);
                 }
             }
         });
 
 
-        autorisationWindow.getbRegistration().addActionListener(new ActionListener() {
+        authorizationWindow.getbRegistration().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                autorisationWindow.dispose();
+                authorizationWindow.dispose();
                 Registration registration = new Registration();
 
                 registration.getbCancel().addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         registration.dispose();
-                        autorisationWindow.setVisible(true);
+                        authorizationWindow.setVisible(true);
                     }
                 });
                 registration.getbRegistration().addActionListener(new ActionListener() {
@@ -368,9 +397,9 @@ public class Operator extends WebFrame {
                     public void actionPerformed(ActionEvent e) {
                         String serverAddress = "http://localhost:8080/";
                         HessianProxyFactory factory = new HessianProxyFactory();
-                        Request_manager_API apiTest = null;
+                        RequestManagerApi apiTest = null;
                         try {
-                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                         } catch (MalformedURLException e1) {
                             e1.printStackTrace();
                         }
@@ -383,7 +412,7 @@ public class Operator extends WebFrame {
                             System.out.print("registration test");
                             System.out.print(registration.getPfPassword().getText());
                             registration.dispose();
-                            autorisationWindow.setVisible(true);
+                            authorizationWindow.setVisible(true);
                             try {
                                 System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(), pass));
                             } catch (ClassNotFoundException | SQLException e1) {

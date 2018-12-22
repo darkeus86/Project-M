@@ -2,12 +2,12 @@ package User;
 
 import Api_Project_M.OrderInfoOperator;
 import Api_Project_M.Ration;
-import Autorisation_and_registration.Autorisation.Autorisation;
+import AuthorizationAndRegistration.Authorization.Authorization;
 import User.Cart.CartMarkup;
-import User.Cart.Intermediate_Picture;
-import User.Pop_up_windows.Payment_Pop_Up;
+import User.Cart.IntermediatePicture;
+import User.PopUpWindows.PaymentPopUp;
 import User.RationMurkup.Rations;
-import Autorisation_and_registration.Registration.Registration;
+import AuthorizationAndRegistration.Registration.Registration;
 import com.alee.extended.image.WebImage;
 
 import java.awt.event.ActionEvent;
@@ -17,64 +17,59 @@ import java.sql.*;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-import Api_Project_M.Request_manager_API;
+import Api_Project_M.RequestManagerApi;
 import com.caucho.hessian.client.HessianProxyFactory;
 
+// баг. Чтобы оформить заказ необходимо сначала нажать на кнопку mainPage в меню слева, иначе главное окно не будет активно.
 public class Start {
     public static String loginId1;
+
     public static void main(String args[]) throws ParseException, MalformedURLException, SQLException, ClassNotFoundException {
         // ТЕСТ СЕРВЛЕТОВ
         String serverAddress = "http://localhost:8080/";
         HessianProxyFactory factory = new HessianProxyFactory();
-        Request_manager_API apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+        RequestManagerApi apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
 
-        
+
         // создаем лист, делаем запрос, запрос заполняет лист, пользуемся листом.
-        ArrayList <OrderInfoOperator> test = new ArrayList<OrderInfoOperator>();
+        ArrayList<OrderInfoOperator> test = new ArrayList<OrderInfoOperator>();
         test = apiTest.selectInformationOrder();
-        for (int i =0; i < test.size();i++)
-        {
-            System.out.println( test.get(i).getOrderFirstName() +" "+ test.get(i).getOrderSecondName());
+        for (int i = 0; i < test.size(); i++) {
+            System.out.println(test.get(i).getOrderFirstName() + " " + test.get(i).getOrderSecondName());
         }
 
 
-
-
-
-        Autorisation autorisationWindow = new Autorisation();
+        Authorization authorizationWindow = new Authorization();
         CartMarkup cartMarkup = new CartMarkup();
         MainFormMarkup mainFrameUser = new MainFormMarkup();
 
-        autorisationWindow.getbLogButton().addActionListener(new ActionListener() {
+        authorizationWindow.getbLogButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 String serverAddress = "http://localhost:8080/";
                 HessianProxyFactory factory = new HessianProxyFactory();
-                Request_manager_API apiTest = null;
+                RequestManagerApi apiTest = null;
 
                 boolean validation = false;
 
-
                 try {
-                    apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                    apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                 } catch (MalformedURLException e2) {
                     e2.printStackTrace();
                 }
-                String pass = new String(autorisationWindow.getPassword().getPassword());
-                validation = apiTest.selectValidationAuthorization(autorisationWindow.getLogin().getText(), pass);
-                System.out.print("validation from autor:" + validation);
+
+                String pass = new String(authorizationWindow.getPassword().getPassword());
+                validation = apiTest.selectValidationAuthorization(authorizationWindow.getLogin().getText(), pass);
 
                 if (!validation) {
 
-                    loginId1 = autorisationWindow.getLogin().getText();
+                    loginId1 = authorizationWindow.getLogin().getText();
 
-                    autorisationWindow.dispose();
-
+                    authorizationWindow.dispose();
 
                     MainPageContentMarkup mainPageUser = new MainPageContentMarkup();
                     MainPageContentMarkup mainPageUserTest = new MainPageContentMarkup();
-
 
                     mainFrameUser.setContent(mainPageUser);
                     mainFrameUser.setNavigation();
@@ -107,13 +102,12 @@ public class Start {
 
 
                         // тест работы кнопки mainPage
-                        Intermediate_Picture picture = new Intermediate_Picture();
+                        IntermediatePicture picture = new IntermediatePicture();
 
                         mainPageUser.setRation(daily.getPanel(), 0);
                         mainPageUser.setRation(fit.getPanel(), 1);
                         mainPageUser.setRation(power.getPanel(), 2);
                         mainPageUser.setCart(picture.getIntermediatePanel());
-
                         mainFrameUser.getButton(1).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
@@ -167,13 +161,13 @@ public class Start {
                             }
                         });
                         //ЛОГАУТ (5 кнопка навигации mainFrameUser),
-                        // они сами по себе друг за другом идут, тут такой же принцип индексации
+                        // они сами по себе  идут друг за другом.
 
                         mainFrameUser.getButton(5).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 mainFrameUser.exit();
-                                autorisationWindow.setVisible(true); // по идее должно быть обнуление
+                                authorizationWindow.setVisible(true); // по идее должно быть обнуление
                                 // всего и скачок на новое состояние приложения, для нового юзера,
                                 // тут же не создается MainFrameUser User = new MainFrameUser
                             }
@@ -192,7 +186,7 @@ public class Start {
                         cartMarkup.getbConfirm().addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                Payment_Pop_Up popUp = new Payment_Pop_Up();
+                                PaymentPopUp popUp = new PaymentPopUp();
                                 popUp.getbPay().addActionListener(new ActionListener() {
                                     @Override
                                     public void actionPerformed(ActionEvent e) {
@@ -201,19 +195,18 @@ public class Start {
                                             popUp.getPaymentFrame().dispose();
                                             String serverAddress = "http://localhost:8080/";
                                             HessianProxyFactory factory = new HessianProxyFactory();
-                                            Request_manager_API apiTest = null;
+                                            RequestManagerApi apiTest = null;
                                             try {
-                                                apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                                                apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                                             } catch (MalformedURLException e1) {
                                                 e1.printStackTrace();
                                             }
 
-
-
                                             try {
                                                 int id = apiTest.selectIdPositionForOrders();
-                                                System.out.print(apiTest.insertOrderRequest(
-                                                        id,
+
+                                                apiTest.insertOrderRequest(
+                                                        id + 1,
                                                         cartMarkup.getCalendar().getDate().toString(),
                                                         cartMarkup.getCbCities().getSelectedItem().toString(),
                                                         cartMarkup.getCbStreets().getSelectedItem().toString(),
@@ -222,23 +215,18 @@ public class Start {
                                                         Integer.parseInt(cartMarkup.getTfRoom().getText()),
                                                         cartMarkup.getWbHour().getValue().toString() + ':' + cartMarkup.getWbMin().getValue().toString(),
                                                         cartMarkup.getlTitle().getText(),
-                                                        Integer.parseInt(cartMarkup.getlPrice().getText().replace("$","").trim()),
+                                                        Integer.parseInt(cartMarkup.getlPrice().getText().replace("$", "").trim()),
                                                         cartMarkup.getTfFirstName().getText(),
                                                         cartMarkup.getTfSecondName().getText(),
                                                         cartMarkup.getTfPhoneNum().getText(),
-                                                        loginId1));
+                                                        loginId1);
                                             } catch (ClassNotFoundException e1) {
                                                 e1.printStackTrace();
                                             } catch (SQLException e1) {
                                                 e1.printStackTrace();
-
                                             }
-
-//
-
                                         }
                                     }
-
                                 });
                             }
                         });
@@ -254,18 +242,17 @@ public class Start {
         });
 
 
-
-        autorisationWindow.getbRegistration().addActionListener(new ActionListener() {
+        authorizationWindow.getbRegistration().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                autorisationWindow.dispose();
+                authorizationWindow.dispose();
                 Registration registration = new Registration();
 
                 registration.getbCancel().addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         registration.dispose();
-                        autorisationWindow.setVisible(true);
+                        authorizationWindow.setVisible(true);
                     }
                 });
 
@@ -274,9 +261,9 @@ public class Start {
                     public void actionPerformed(ActionEvent e) {
                         String serverAddress = "http://localhost:8080/";
                         HessianProxyFactory factory = new HessianProxyFactory();
-                        Request_manager_API apiTest = null;
+                        RequestManagerApi apiTest = null;
                         try {
-                            apiTest = (Request_manager_API) factory.create(Request_manager_API.class, serverAddress + "DataService");
+                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
                         } catch (MalformedURLException e1) {
                             e1.printStackTrace();
                         }
@@ -286,10 +273,10 @@ public class Start {
 
                         if ((validation) && (pass.equals(repeatPass))) {
                             registration.dispose();
-                            autorisationWindow.setVisible(true);
+                            authorizationWindow.setVisible(true);
 
                             try {
-                               apiTest.insertSimpleUser(registration.getLogin().getText(), pass);
+                                apiTest.insertSimpleUser(registration.getLogin().getText(), pass);
                             } catch (ClassNotFoundException | SQLException e1) {
                                 e1.printStackTrace();
                             }

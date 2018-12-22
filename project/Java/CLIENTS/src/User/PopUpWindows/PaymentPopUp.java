@@ -1,4 +1,4 @@
-package User.Pop_up_windows;
+package User.PopUpWindows;
 
 import com.alee.laf.button.WebButton;
 import com.alee.laf.rootpane.WebFrame;
@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Payment_Pop_Up {
+public class PaymentPopUp {
     WebFrame paymentFrame = new WebFrame();
     WebPasswordField pfCVC = new WebPasswordField();
     WebTextField tfCardNumber = new WebTextField();
@@ -53,7 +53,7 @@ public class Payment_Pop_Up {
         else return false;
     }
 
-    public Payment_Pop_Up()
+    public PaymentPopUp()
     {
         bCancel.addActionListener(new ActionListener() {
             @Override

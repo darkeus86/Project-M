@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class MyOrdersTable extends AbstractTableModel
 {
     private int columnCount = 3;
-    private ArrayList<String []> dataArrayList;
+    public ArrayList<String []> dataArrayList;
 
     public MyOrdersTable(){
         dataArrayList = new ArrayList<String[]>();
@@ -61,11 +61,13 @@ public class MyOrdersTable extends AbstractTableModel
         return false;
     }
 
-    public void addData(String[] row){
-        //Добавление данных в таблицу
-        String[] rowTable = new String[getColumnCount()];
-        rowTable = row;
-        dataArrayList.add(rowTable);
+    @Override
+    public void setValueAt ( Object value, int row, int col )
+    {
+        dataArrayList.add((String[]) value);
+        fireTableCellUpdated ( row,  0);
+        fireTableCellUpdated ( row,  1);
+        fireTableCellUpdated ( row,  2);
     }
 
 }
