@@ -25,10 +25,8 @@ public class Operator extends WebFrame {
 
     WebTabbedPane tabbedPane = new WebTabbedPane();
     MenuBar menuBar = new MenuBar();
-    NewOrdersTable newOrdersTableModel;
     WebTable newOrdersTable;
     WebScrollPane newOrdersScroll;
-    MyOrdersTable myOrdersTableModel;
     WebTable myOrdersTable;
     WebScrollPane myOrdersScroll;
     WebScrollPane infromation;
@@ -93,8 +91,6 @@ public class Operator extends WebFrame {
         //Заполняем таблицу
         String[] str = new String[3];
         ArrayList<OrderInfoOperator> orderInfo = new ArrayList<OrderInfoOperator>();
-        myOrdersTableModel= new MyOrdersTable();
-        newOrdersTableModel= new NewOrdersTable();
         try {
             orderInfo = apiTest.selectInformationOrder();
             String[][] str1 = new String[orderInfo.size()][3];
@@ -102,8 +98,6 @@ public class Operator extends WebFrame {
                 str1[i][0] = Integer.toString(orderInfo.get(i).getOrderId());
                 str1[i][1] = orderInfo.get(i).getOrderTitle();
                 str1[i][2] = orderInfo.get(i).getOrderDate() + " " + orderInfo.get(i).getOrderTime();
-                //myOrdersTableModel.setValueAt(str, i+1, 0);
-                myOrdersTableModel.dataArrayList.add(str);
             }
             String[] str2 = new String[3];
             str2[0] = "Id";
@@ -286,7 +280,6 @@ public class Operator extends WebFrame {
         panelRight.add(title, cRight);
         panelRight.add(courier, cRight);
         panelRight.add(firstcour, cRight);
-        ;
         panelRight.add(secondcour, cRight);
         panelRight.add(phonecour, cRight);
         panelRight.add(current, cRight);
