@@ -113,46 +113,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Operator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
+      <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1394">
-              <caret line="281" column="42" selection-start-line="281" selection-start-column="42" selection-end-line="281" selection-end-column="42" />
-              <folding>
-                <element signature="e#4869#9004#0" expanded="true" />
-                <element signature="e#9003#9004#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+      <file leaf-file-name="RequestManagerApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="280" selection-start-line="280" selection-end-line="280" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1409#1428#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartMarkup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
+      <file leaf-file-name="WindowAddingOperator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+            <state relative-caret-position="-136">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourierInfoOperator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/CourierInfoOperator.java">
+      <file leaf-file-name="AbuseApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="266">
+              <caret line="136" column="38" lean-forward="true" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportsWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -187,7 +188,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -237,6 +238,10 @@
         <option value="$PROJECT_DIR$/CLIENTS/src/AddingCouriers/Courier.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java" />
+        <option value="$PROJECT_DIR$/API/src/Api_Project_M/RequestManagerApi.java" />
+        <option value="$PROJECT_DIR$/SERVER/src/server/AbuseApi.java" />
       </list>
     </option>
   </component>
@@ -265,8 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,7 +293,7 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="API" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Api_Project_M" type="462c0819:PsiDirectoryNode" />
+              <item name="ApiProjectM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -302,20 +305,6 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AddingCouriers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AuthorizationAndRegistration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -331,18 +320,49 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="SERVER" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Libs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545469349826" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Libs/jcalendar-1.4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -350,22 +370,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Snacki_Click\Documents\GitHub\Project-M\project\Java\src\Libs" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\src" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\Project" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AddingOperators" />
+      <recent name="User.Registration" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\.idea\resource\images" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER\lib" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\out\production\CLIENTS" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="User.Registration" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java" />
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\src" />
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\src" />
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS\Project" />
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\CLIENTS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,7 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Unknown.Server1479013439">
+  <component name="RunManager" selected="Application.Operator (1)">
     <configuration name="Courier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AddingCouriers.Courier" />
       <module name="CLIENTS" />
@@ -391,22 +412,22 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Operator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AddingOperators.Operator" />
+      <module name="CLIENTS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddingOperators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Operator.Operator" />
       <module name="CLIENTS" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Operator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="SimpleUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.SimpleUser" />
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Project.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -506,18 +527,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Start" />
-      <item itemvalue="Application.SimpleUser" />
       <item itemvalue="Application.Operator" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Courier" />
+      <item itemvalue="Application.Operator (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Operator (1)" />
         <item itemvalue="Application.Courier" />
         <item itemvalue="Application.Start" />
         <item itemvalue="Application.Operator" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.SimpleUser" />
       </list>
     </recent_temporary>
   </component>
@@ -587,6 +608,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.37791932" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -604,16 +626,15 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3786885" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3295082" />
     </layout>
   </component>
@@ -644,25 +665,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4930">
-          <caret line="290" lean-forward="true" selection-start-line="290" selection-end-line="290" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1409#1428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Java/Project/Login.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/User/Main_logic_user.java" />
     <entry file="file://$PROJECT_DIR$/Project/Admin.java" />
     <entry file="file://$PROJECT_DIR$/Project/MainAdmin.java" />
     <entry file="file://$PROJECT_DIR$/out/production/project/User/Start" />
@@ -686,13 +688,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/SERVER/Abuse_api.class" />
-    <entry file="file://$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/API/Api_Project_M/Request_manager_API.class" />
     <entry file="file://$PROJECT_DIR$/API/API.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -700,13 +696,7 @@
     <entry file="file://$PROJECT_DIR$/SERVER/web.xml" />
     <entry file="jar://$PROJECT_DIR$/../hessian-4.0.51.jar!/com/caucho/hessian/server/HessianSkeleton.class" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Test.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -714,13 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/Ration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Ration.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Authorization/Authorization.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Registration/Registration.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Content.java">
@@ -744,7 +728,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/SendReport.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="92" column="1" lean-forward="true" selection-start-line="10" selection-end-line="92" selection-end-column="1" />
@@ -766,20 +750,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/OrderInfoOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java" />
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -787,59 +759,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/CourierInfoOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" />
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyRenderer.java" />
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/CourierInfoOperator.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/PaymentPopUp.java" />
-    <entry file="file://$PROJECT_DIR$/API/src/Api_Project_M/RequestManagerApi.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/swing/plaf/basic/BasicButtonListener.java" />
-    <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingCouriers/WindowAddingCourier.java" />
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingCouriers/Courier.java" />
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="280" selection-start-line="280" selection-end-line="280" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1409#1428#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="731">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1394">
-          <caret line="281" column="42" selection-start-line="281" selection-start-column="42" selection-end-line="281" selection-end-column="42" />
+        <state relative-caret-position="5525">
+          <caret line="347" column="54" selection-start-line="347" selection-start-column="54" selection-end-line="347" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
           <folding>
-            <element signature="e#4869#9004#0" expanded="true" />
-            <element signature="e#9003#9004#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="136" column="38" lean-forward="true" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -910,7 +892,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hessian-4.0.51</last-edited>
+          <last-edited>jcalendar-1.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

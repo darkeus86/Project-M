@@ -3,12 +3,11 @@ package Operator;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.rootpane.WebFrame;
-import com.alee.laf.text.WebTextArea;
 import com.alee.laf.text.WebTextField;
 
 import java.awt.*;
 
-public class SendReport extends WebFrame {
+public class SendTechnicalReport extends WebFrame {
 
     WebButton send = new WebButton("Send");
     WebButton cancel = new WebButton("Cancel");
@@ -32,7 +31,7 @@ public class SendReport extends WebFrame {
     protected static GridBagConstraints c = new GridBagConstraints();
     GridBagLayout gridBagLayout = new GridBagLayout();
 
-    SendReport(){
+    SendTechnicalReport(){
 
         setSize(700,700);
         setLocationRelativeTo(null);
@@ -86,8 +85,8 @@ public class SendReport extends WebFrame {
 
     public static void launch()
     {
-        SendReport sendReport = new SendReport();
-        sendReport.setVisible(true);
+        SendTechnicalReport sendTechnicalReport = new SendTechnicalReport();
+        sendTechnicalReport.setVisible(true);
     }
 
 }

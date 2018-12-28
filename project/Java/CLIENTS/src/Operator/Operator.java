@@ -1,8 +1,8 @@
 package Operator;
 
-import Api_Project_M.CourierInfoOperator;
-import Api_Project_M.OrderInfoOperator;
-import Api_Project_M.RequestManagerApi;
+import ApiProjectM.CourierInfoOperator;
+import ApiProjectM.OrderInfoOperator;
+import ApiProjectM.RequestManagerApi;
 import AuthorizationAndRegistration.Authorization.Authorization;
 import AuthorizationAndRegistration.Registration.Registration;
 import com.alee.laf.button.WebButton;
@@ -321,7 +321,7 @@ public class Operator extends WebFrame {
         MenuBar.makeReport.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                SendReport.launch();
+                SendTechnicalReport.launch();
             }
         });
 

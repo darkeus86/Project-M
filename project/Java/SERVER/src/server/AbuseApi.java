@@ -1,10 +1,10 @@
 package server;
 
-import Api_Project_M.CourierInfoOperator;
-import Api_Project_M.OrderInfoOperator;
-import Api_Project_M.Ration;
+import ApiProjectM.CourierInfoOperator;
+import ApiProjectM.OrderInfoOperator;
+import ApiProjectM.Ration;
 import com.caucho.hessian.server.HessianServlet;
-import Api_Project_M.RequestManagerApi;
+import ApiProjectM.RequestManagerApi;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -100,6 +100,46 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
             Statement statement = con.createStatement();
             statement.executeUpdate("INSERT INTO public.\"Couriers\"" +
                     "VALUES (" + id+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +phone+"\');");
+            return true;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean insertOperator(int id, String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/Operators";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("INSERT INTO public.\"Operators\"" +
+                    "VALUES (" + id+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +phone+"\');");
+            return true;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean insertTechnicalReport(int version, String license, String eMail, String subject, String name) throws ClassNotFoundException, SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/TechnicalReports";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("INSERT INTO public.\"TechnicalReports\"" +
+                    "VALUES (" + version+ ",\'" + license + "\',\'" + eMail + "\', \'" + subject + "\', \'" + name + "\');");
             return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

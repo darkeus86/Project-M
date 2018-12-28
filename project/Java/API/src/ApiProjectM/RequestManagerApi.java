@@ -1,8 +1,5 @@
-package Api_Project_M;
+package ApiProjectM;
 
-import User.RationMurkup.RationDataFromDatabase;
-
-import java.awt.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -12,6 +9,8 @@ public interface RequestManagerApi {
     int selectIdPositionCourier() throws SQLException, ClassNotFoundException;
     boolean insertSimpleUser (String login, String password) throws ClassNotFoundException, SQLException;
     boolean insertCourier(int id ,String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException;
+    boolean insertOperator(int id ,String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException;
+    boolean insertTechnicalReport(int version, String license, String eMail, String subject, String name) throws  ClassNotFoundException, SQLException;
     boolean selectValidationRegistration(String login);
     boolean selectValidationAuthorization(String login, String password);
     Ration selectInformationRation(String title) throws ClassNotFoundException, SQLException;

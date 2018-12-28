@@ -1,7 +1,7 @@
 package User;
 
-import Api_Project_M.OrderInfoOperator;
-import Api_Project_M.Ration;
+import ApiProjectM.OrderInfoOperator;
+import ApiProjectM.Ration;
 import AuthorizationAndRegistration.Authorization.Authorization;
 import User.Cart.CartMarkup;
 import User.Cart.IntermediatePicture;
@@ -17,7 +17,7 @@ import java.sql.*;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-import Api_Project_M.RequestManagerApi;
+import ApiProjectM.RequestManagerApi;
 import com.caucho.hessian.client.HessianProxyFactory;
 
 // баг. Чтобы оформить заказ необходимо сначала нажать на кнопку mainPage в меню слева, иначе главное окно не будет активно.

@@ -1,4 +1,4 @@
-package AddingCouriers;
+package AddingOperators;
 
 import ApiProjectM.RequestManagerApi;
 import com.caucho.hessian.client.HessianProxyFactory;
@@ -9,12 +9,12 @@ import java.net.MalformedURLException;
 import java.sql.SQLException;
 import java.text.ParseException;
 
-public class Courier {
+public class Operator {
  public static void main(String[] args) throws SQLException, ClassNotFoundException, ParseException {
-     WindowAddingCourier windowAddingCourier = new WindowAddingCourier();
-     windowAddingCourier.init();
+     WindowAddingOperator windowAddingOperator = new WindowAddingOperator();
+     windowAddingOperator.init();
 
-     windowAddingCourier.getbAdd().addActionListener(new ActionListener() {
+     windowAddingOperator.getbAdd().addActionListener(new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent e) {
 
@@ -31,11 +31,11 @@ public class Courier {
 
              try {
                  int id = apiTest.selectIdPositionCourier();
-                 apiTest.insertCourier(
+                 apiTest.insertOperator(
                              id+1,
-                             windowAddingCourier.getTfPersonFirstName().getText(),
-                             windowAddingCourier.getTfPersonSecondName().getText(),
-                             windowAddingCourier.getTfPhone().getText()
+                             windowAddingOperator.getTfPersonFirstName().getText(),
+                             windowAddingOperator.getTfPersonSecondName().getText(),
+                             windowAddingOperator.getTfPhone().getText()
                      );
              } catch (ClassNotFoundException e1) {
                  e1.printStackTrace();

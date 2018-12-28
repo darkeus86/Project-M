@@ -1,4 +1,4 @@
-package Api_Project_M;
+package ApiProjectM;
 
 import java.io.Serializable;
 
