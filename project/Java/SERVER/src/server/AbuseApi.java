@@ -1,17 +1,43 @@
 package server;
 
-import ApiProjectM.CourierInfoOperator;
-import ApiProjectM.OrderInfoOperator;
-import ApiProjectM.Ration;
+import ApiProjectM.*;
 import com.caucho.hessian.server.HessianServlet;
-import ApiProjectM.RequestManagerApi;
 
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.Class.forName;
+
 
 public  class AbuseApi extends HessianServlet implements RequestManagerApi {
 
+
+    @Override
+    public boolean insertProfileInformation(String loginId, String firstName, String SecondName, String gender, String email)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean insertReports(int id, String reporter, String subject, String date) throws ClassNotFoundException,
+            SQLException {
+        try {
+            forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/Reports";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("INSERT INTO public.\"Reports\"" +
+                    "VALUES (" + id+ ",\'" + reporter + "\',\'" + subject + "\', \'" +date+"\');");
+            return true;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
     @Override
     public boolean insertOrderRequest(int id, String date, String city, String street, int house, int housing, int room, String time, String rationTitle, int price, String personName, String personSecondName, String phone, String UserLogin) throws ClassNotFoundException, SQLException {
@@ -146,6 +172,11 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
+    }
+
+    @Override
+    public boolean updateAccountInformation(String login, String password) {
         return false;
     }
 
@@ -294,6 +325,47 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
         con.close();
         return ordersList;
 
+    }
+
+    @Override
+    public boolean updateStatus(int orderId, int status) throws ClassNotFoundException, SQLException {
+        forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Couriers";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ResultSet rs = statement.executeQuery("UPDATE public.\"Orders\" SET status=" + status + "WHERE id=" +
+                orderId + ";");
+        return false;
+    }
+
+    @Override
+    public ArrayList<Reports> selectReportsOperator() throws ClassNotFoundException, SQLException {
+        forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Reports";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ArrayList<Reports> ordersList = new ArrayList<Reports>();
+
+        ResultSet rs = statement.executeQuery("SELECT *FROM public.\"Reports\";");
+
+
+        while (rs.next()){
+            Reports reports = new Reports();
+            reports.setId(Integer.parseInt(rs.getString("id")));
+            reports.setReporter(rs.getString("reporter"));
+            reports.setSubject(rs.getString("subject"));
+            reports.setDate(rs.getString("date"));
+            ordersList.add(reports);
+        }
+        rs.close();
+        con.close();
+        return ordersList;
     }
 }
 

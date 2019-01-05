@@ -17,6 +17,7 @@ public class OrderInfoOperator implements Serializable {
     private String orderPhone;
     private String orderLoginId;
     private int price;
+    private int status;
 
 
 
@@ -131,4 +132,8 @@ public class OrderInfoOperator implements Serializable {
     public void setOrderPrice(int price) {
         this.price = price;
     }
+
+    public int getStatus() {return status;}
+
+    public void setStatus(int status) {this.status = status;}
 }

@@ -53,23 +53,23 @@ public class Operator extends WebFrame {
     WebLabel current = new WebLabel("Current status");
     WebLabel status = new WebLabel();
 
-    String firstnames = Content.getFirstName();
-    String secondnames = Content.getSecondName();
-    String addresstr = Content.getAddress();
-    String desiredtimes = Content.getDesiredTime();
-    String phones = Content.getPhone();
-    String titles = Content.getTitle();
-    String firstcours = Content.getFirstName();
-    String secondcours = Content.getSecondName();
-    String phonecours = Content.getPhone();
-    String statustr = Content.getStatus();
+    private String firstnames = Content.getFirstName();
+    private String secondnames = Content.getSecondName();
+    private String addresstr = Content.getAddress();
+    private String desiredtimes = Content.getDesiredTime();
+    private String phones = Content.getPhone();
+    private String titles = Content.getTitle();
+    private String firstcours = Content.getFirstName();
+    private String secondcours = Content.getSecondName();
+    private String phonecours = Content.getPhone();
+    private String statustr = Content.getStatus();
 
     protected static GridBagConstraints c = new GridBagConstraints();
     protected static GridBagConstraints cRight = new GridBagConstraints();
     static Operator operator = new Operator();
     static Login login = new Login();
-    GridBagLayout gridBagLayout = new GridBagLayout();
-    GridBagLayout gridBagLayoutRight = new GridBagLayout();
+    private GridBagLayout gridBagLayout = new GridBagLayout();
+    private GridBagLayout gridBagLayoutRight = new GridBagLayout();
 
     Operator() {
 
@@ -94,16 +94,24 @@ public class Operator extends WebFrame {
         try {
             orderInfo = apiTest.selectInformationOrder();
             String[][] str1 = new String[orderInfo.size()][3];
+            String[][] str3 = new String[orderInfo.size()][3];
             for (int i = 0; i < orderInfo.size(); i++) {
-                str1[i][0] = Integer.toString(orderInfo.get(i).getOrderId());
-                str1[i][1] = orderInfo.get(i).getOrderTitle();
-                str1[i][2] = orderInfo.get(i).getOrderDate() + " " + orderInfo.get(i).getOrderTime();
+
+                if(orderInfo.get(i).getStatus() == 0){
+                    str1[i][0] = Integer.toString(orderInfo.get(i).getOrderId());
+                    str1[i][1] = orderInfo.get(i).getOrderTitle();
+                    str1[i][2] = orderInfo.get(i).getOrderDate() + " " + orderInfo.get(i).getOrderTime();}
+                else{
+                    str3[i][0] = Integer.toString(orderInfo.get(i).getOrderId());
+                    str3[i][1] = orderInfo.get(i).getOrderTitle();
+                    str3[i][2] = orderInfo.get(i).getOrderDate() + " " + orderInfo.get(i).getOrderTime();
+                }
             }
             String[] str2 = new String[3];
             str2[0] = "Id";
             str2[1] = "Title";
             str2[2] = "Time";
-            myOrdersTable = new WebTable(str1, str2);
+            myOrdersTable = new WebTable(str3, str2);
             myOrdersTable.setEditable(false);
             newOrdersTable = new WebTable(str1, str2);
             newOrdersTable.setEditable(false);
@@ -175,6 +183,24 @@ public class Operator extends WebFrame {
                         firstcours = courierInfo.get(1).getOperatorFirstName();
                         secondcours = courierInfo.get(1).getOperatorSecondName();
                         phonecours = courierInfo.get(1).getOperatorPhone();
+                        if(orderInfo.get(orderId).getStatus()==0)
+                            statustr = "Free";
+                        else statustr = "Cooking";
+                        RequestManagerApi finalApiTest = apiTest;
+                        takeorder.addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                try {
+                                    finalApiTest.updateStatus(orderId, 1);
+                                } catch (ClassNotFoundException e1) {
+                                    e1.printStackTrace();
+                                } catch (SQLException e1) {
+                                    e1.printStackTrace();
+                                }
+                                status.setText("Cooking");
+                                panelRight.remove(takeorder);
+                            }
+                        });
                     }
 
                     //Заполняем данные правой панели
@@ -193,13 +219,7 @@ public class Operator extends WebFrame {
 
                     panelRight.add(takeorder, cRight);
 
-                    takeorder.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            status.setText("Cooking");
-                            panelRight.remove(takeorder);
-                        }
-                    });
+
                 }
             }
         });
@@ -332,6 +352,14 @@ public class Operator extends WebFrame {
                 inProgress.showMessage(operator);
             }
         });
+
+        MenuBar.myReports.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ReportsWindow reportsWindow = new ReportsWindow();
+                reportsWindow.launch();
+            }
+        });
     }
 
 
@@ -402,6 +430,8 @@ public class Operator extends WebFrame {
                         boolean validation = (apiTest.selectValidationRegistration(registration.getLogin().getText()));
 
                         if ((validation) && (pass.equals(repeatPass))) {
+                            System.out.print("registration test");
+                            System.out.print(registration.getPfPassword().getText());
                             registration.dispose();
                             authorizationWindow.setVisible(true);
                             try {

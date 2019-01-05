@@ -258,7 +258,7 @@ public class Start {
                                             } catch (MalformedURLException e2) {
                                                 e2.printStackTrace();
                                             }
-                                            apiTest.updateAccountInformation(loginId1,profile.getTfLogin().getText(),profile.getTfPassword().getText());
+                                            apiTest.updateAccountInformation(profile.getTfLogin().getText(),profile.getTfPassword().getText());
                                         }
                                     }
                                 });
