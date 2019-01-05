@@ -47,9 +47,8 @@ public class MainFormMarkup {
         GridBagLayout gbL = new GridBagLayout();
 
 
-        navPanel.setPreferredSize(150, 550);
+      //  navPanel.setPreferredSize(150, 550);
 
-        //navPanel.setBorder(BorderFactory.createTitledBorder("nav"));
         navPanel.setLayout(gLayout);
         navPanel.add(mainPageBut);
         navPanel.add(myOrders);
@@ -57,8 +56,8 @@ public class MainFormMarkup {
         navPanel.add(ownRation);
         navPanel.add(logout);
 
-        contentPanel.setBorder(BorderFactory.createTitledBorder("content"));
-        mainFrame.setLayout(gbL);
+
+       mainFrame.setLayout(gbL);
     }
 
     public void init() {
@@ -72,24 +71,38 @@ public class MainFormMarkup {
     }
 
 
-    public void setContent(MainPageContentMarkup object)  //Вставка панели контента(контент =
-    {                                                     //содержимогу раздела[main page , my orders etc]) в nav
-        constraints.fill = GridBagConstraints.BOTH;
+    public void setContent(WebPanel panel)  //Вставка панели контента(контент =
+    {
+        //содержимогу раздела[main page , my orders etc]) в nav
+
+
+        contentPanel.removeAll();
+        contentPanel.setLayout(new GridLayout());
+        contentPanel.add(panel);
+        constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.gridx = 1;
         constraints.gridy = 0;
-        constraints.insets = new Insets(0,0,0,0);
-        mainFrame.add(object.getPanel(), constraints);
+        constraints.anchor = GridBagConstraints.WEST;
+//        constraints.insets = new Insets(0,0,0,0);
+        mainFrame.add(contentPanel, constraints);
+        contentPanel.repaint();
+
+
+
+        //mainFrame.setVisible(true);
     }
 
     public void setNavigation() { //тут мы вставляем нашу панель навигации в mainFrame
-        constraints.fill = GridBagConstraints.HORIZONTAL;
+        constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.ipadx = NAV_WEIGHT;
-        constraints.ipady = NAV_HEIGHT;
-        constraints.insets = new Insets(0,0,0,100);
+        constraints.ipady = 50;
+        constraints.anchor = GridBagConstraints.EAST;
+//        constraints.insets = new Insets(0,0,0,0);
         mainFrame.add(navPanel, constraints);
     }
+
 
     public WebButton getButton(int id) { //вся логика переключений кнопок должна быть в start, обычный геттер
         switch (id) {

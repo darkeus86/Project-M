@@ -37,7 +37,7 @@ public class MainPageContentMarkup {
 
     public MainPageContentMarkup() {
         mainPanel.setLayout(gbL);
-        mainPanel.setPreferredSize(700, 650);
+      //  mainPanel.setPreferredSize(1000, 1000);
         //mainPanel.setBorder(BorderFactory.createTitledBorder("MainPAgeContentMark"));
     }
 
@@ -58,7 +58,7 @@ public class MainPageContentMarkup {
         constraints.gridx = 1;
         constraints.gridy = 0;
         constraints.gridheight = 3;
-        constraints.insets = new Insets(15,30,0,90);
+        constraints.insets = new Insets(15,30,0,30);
         mainPanel.add(object, constraints);
     }
 

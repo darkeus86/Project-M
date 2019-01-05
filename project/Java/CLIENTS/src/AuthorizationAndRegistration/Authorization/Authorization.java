@@ -1,5 +1,6 @@
 package AuthorizationAndRegistration.Authorization;
 
+import ApiProjectM.RequestManagerApi;
 import com.alee.laf.button.*;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
@@ -7,8 +8,12 @@ import com.alee.laf.rootpane.WebFrame;
 import com.alee.laf.text.WebPasswordField;
 
 import com.alee.laf.text.WebTextField;
+import com.caucho.hessian.client.HessianProxyFactory;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.MalformedURLException;
 
 public class Authorization extends WebFrame {
 
@@ -37,11 +42,8 @@ public class Authorization extends WebFrame {
         welcome.setHorizontalAlignment(WebLabel.CENTER);
         welcome.setFontSize(30);
 
-
-
 //      ###COMPOSITION###
         WebPanel additionalPanel = new WebPanel();
-
         additionalPanel.setBounds(150,50,375,300);
         mainPanel.add(additionalPanel);
 

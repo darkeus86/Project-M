@@ -8,6 +8,7 @@ import User.Cart.IntermediatePicture;
 import User.PopUpWindows.PaymentPopUp;
 import User.RationMurkup.Rations;
 import AuthorizationAndRegistration.Registration.Registration;
+import User.profileMarkup.profileMarkup;
 import com.alee.extended.image.WebImage;
 
 import java.awt.event.ActionEvent;
@@ -42,10 +43,13 @@ public class Start {
         Authorization authorizationWindow = new Authorization();
         CartMarkup cartMarkup = new CartMarkup();
         MainFormMarkup mainFrameUser = new MainFormMarkup();
+        MainPageContentMarkup mainPageContent = new MainPageContentMarkup();
+
 
         authorizationWindow.getbLogButton().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
 
                 String serverAddress = "http://localhost:8080/";
                 HessianProxyFactory factory = new HessianProxyFactory();
@@ -63,65 +67,107 @@ public class Start {
                 validation = apiTest.selectValidationAuthorization(authorizationWindow.getLogin().getText(), pass);
 
                 if (!validation) {
-
-                    loginId1 = authorizationWindow.getLogin().getText();
-
-                    authorizationWindow.dispose();
-
-                    MainPageContentMarkup mainPageUser = new MainPageContentMarkup();
-                    MainPageContentMarkup mainPageUserTest = new MainPageContentMarkup();
-
-                    mainFrameUser.setContent(mainPageUser);
-                    mainFrameUser.setNavigation();
-                    mainFrameUser.init();
-
-                    mainFrameUser.setContent(mainPageUserTest);
-                    mainFrameUser.setNavigation();
-                    mainFrameUser.init();
-
-
-                    WebImage img = new WebImage(".idea/resource/images/cart.png");
-
-
                     try {
-                        // первый рацион на главной
+                        mainFrameUser.setContent(mainPageContent.getPanel());
+                        mainFrameUser.setNavigation();
+                        loginId1 = authorizationWindow.getLogin().getText();
+
+                        authorizationWindow.dispose();
+
+                        MainPageContentMarkup mainPageContent = new MainPageContentMarkup();
+                        MainPageContentMarkup mainPageUserTest = new MainPageContentMarkup();
+
+                        WebImage img = new WebImage(".idea/resource/images/cart.png");
+//#################################################################################################################################################
+//                      первый рацион на главной
+
                         Ration ration;
+
                         WebImage imgForDaily = new WebImage(".idea/resource/images/vegetables.png");
                         ration = apiTest.selectInformationRation("Daily");
+
                         Rations daily = new Rations(ration.getTitle(), ration.getDescription(), ration.getPrice() + " $", imgForDaily);
 
-                        // второй рацион на главной
+//#################################################################################################################################################
+
+//                     второй рацион на главной
                         WebImage imgForFit = new WebImage(".idea/resource/images/diet.png");
                         ration = apiTest.selectInformationRation("Fit");
+
                         Rations fit = new Rations(ration.getTitle(), ration.getDescription(), ration.getPrice() + " $", imgForFit);
 
-                        // третий рацион на главной
+//#################################################################################################################################################
+//                    третий рацион на главной
                         WebImage imgForPower = new WebImage(".idea/resource/images/steak.png");
                         ration = apiTest.selectInformationRation("Power");
                         Rations power = new Rations(ration.getTitle(), ration.getDescription(), ration.getPrice() + " $", imgForPower);
 
+//#################################################################################################################################################
 
-                        // тест работы кнопки mainPage
                         IntermediatePicture picture = new IntermediatePicture();
 
-                        mainPageUser.setRation(daily.getPanel(), 0);
-                        mainPageUser.setRation(fit.getPanel(), 1);
-                        mainPageUser.setRation(power.getPanel(), 2);
-                        mainPageUser.setCart(picture.getIntermediatePanel());
+                        mainPageContent.setRation(daily.getPanel(), 0);
+                        mainPageContent.setRation(fit.getPanel(), 1);
+                        mainPageContent.setRation(power.getPanel(), 2);
+                        mainPageContent.setCart(picture.getIntermediatePanel());
+                        mainFrameUser.setContent(mainPageContent.getPanel());
+                        mainFrameUser.setNavigation();
+                        mainFrameUser.init();
+                        profileMarkup profile = new profileMarkup();
+
+                        daily.getbToOrder().addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                System.out.print("to order");
+                                cartMarkup.setlPrice(daily.getlPrice().getText());
+                                cartMarkup.setlTitle(daily.getlTitle().getText());
+                                mainPageContent.setCart(cartMarkup.getPanel());
+                                picture.getIntermediatePanel().setVisible(false);
+                                cartMarkup.getPanel().setVisible(true);
+                                mainPageContent.getPanel().setVisible(true);
+                            }
+                        });
+
+                        fit.getbToOrder().addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                cartMarkup.setlPrice(fit.getlPrice().getText());
+                                cartMarkup.setlTitle(fit.getlTitle().getText());
+                                mainPageContent.setCart(cartMarkup.getPanel());
+                                picture.getIntermediatePanel().setVisible(false);
+                                cartMarkup.getPanel().setVisible(true);
+                                mainPageContent.getPanel().setVisible(true);
+                            }
+                        });
+
+                        power.getbToOrder().addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                cartMarkup.setlPrice(power.getlPrice().getText());
+                                cartMarkup.setlTitle(power.getlTitle().getText());
+                                mainPageContent.setCart(cartMarkup.getPanel());
+                                picture.getIntermediatePanel().setVisible(false);
+                                cartMarkup.getPanel().setVisible(true);
+                                mainPageContent.getPanel().setVisible(true);
+                            }
+                        });
+
                         mainFrameUser.getButton(1).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                mainPageUser.getPanel().setVisible(true);
+
+                                mainFrameUser.setContent(mainPageContent.getPanel());
+
                                 daily.getbToOrder().addActionListener(new ActionListener() {
                                     @Override
                                     public void actionPerformed(ActionEvent e) {
                                         System.out.print("to order");
                                         cartMarkup.setlPrice(daily.getlPrice().getText());
                                         cartMarkup.setlTitle(daily.getlTitle().getText());
-                                        mainPageUser.setCart(cartMarkup.getPanel());
+                                        mainPageContent.setCart(cartMarkup.getPanel());
                                         picture.getIntermediatePanel().setVisible(false);
                                         cartMarkup.getPanel().setVisible(true);
-                                        mainPageUser.getPanel().setVisible(true);
+                                        mainPageContent.getPanel().setVisible(true);
                                     }
                                 });
 
@@ -130,10 +176,10 @@ public class Start {
                                     public void actionPerformed(ActionEvent e) {
                                         cartMarkup.setlPrice(fit.getlPrice().getText());
                                         cartMarkup.setlTitle(fit.getlTitle().getText());
-                                        mainPageUser.setCart(cartMarkup.getPanel());
+                                        mainPageContent.setCart(cartMarkup.getPanel());
                                         picture.getIntermediatePanel().setVisible(false);
                                         cartMarkup.getPanel().setVisible(true);
-                                        mainPageUser.getPanel().setVisible(true);
+                                        mainPageContent.getPanel().setVisible(true);
                                     }
                                 });
 
@@ -142,27 +188,83 @@ public class Start {
                                     public void actionPerformed(ActionEvent e) {
                                         cartMarkup.setlPrice(power.getlPrice().getText());
                                         cartMarkup.setlTitle(power.getlTitle().getText());
-                                        mainPageUser.setCart(cartMarkup.getPanel());
+                                        mainPageContent.setCart(cartMarkup.getPanel());
                                         picture.getIntermediatePanel().setVisible(false);
                                         cartMarkup.getPanel().setVisible(true);
-                                        mainPageUser.getPanel().setVisible(true);
+                                        mainPageContent.getPanel().setVisible(true);
                                     }
                                 });
-                                mainPageUserTest.getPanel().setVisible(false);
-
                             }
                         });
+
 
                         mainFrameUser.getButton(2).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                mainPageUser.getPanel().setVisible(false);
-                                mainPageUserTest.getPanel().setVisible(true);
+                                mainFrameUser.setContent(mainPageContent.getPanel());
+                            }
+                        });
+
+
+                        mainFrameUser.getButton(3).addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                mainFrameUser.setContent(profile.getContainerPanel());
+                                mainFrameUser.init();
+
+                                profile.getbSaveProfileInfo().addActionListener(new ActionListener() {
+                                    @Override
+                                    public void actionPerformed(ActionEvent e) {
+                                        String serverAddress = "http://localhost:8080/";
+                                        HessianProxyFactory factory = new HessianProxyFactory();
+                                        RequestManagerApi apiTest = null;
+                                        try {
+                                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
+                                        } catch (MalformedURLException e2) {
+                                            e2.printStackTrace();
+                                        }
+                                        System.out.print(apiTest.insertProfileInformation(
+                                                loginId1,
+                                                profile.getTfFirstName().getText(),
+                                                profile.getTfSecongName().getText(),
+                                                profile.getGroup().getSelection().getActionCommand(),
+                                                profile.getTfEmail().getText()));
+                                    }
+                                });
+                                profile.getbSaveAccoundChangeInfo().addActionListener(new ActionListener() {
+                                    @Override
+                                    public void actionPerformed(ActionEvent e) {
+                                        if (profile.getTfLogin().getText().isEmpty() && profile.getTfPassword().getText().isEmpty())
+                                        {
+                                            profile.setTfLogin("Input new login");
+                                            profile.setTfPassword("Input new password");
+                                        }
+                                        else if(!profile.getTfLogin().getText().isEmpty() && profile.getTfPassword().getText().isEmpty())
+                                        {
+                                            profile.setTfPassword("Input new password");
+                                        }
+                                        else if(profile.getTfLogin().getText().isEmpty() && !profile.getTfPassword().getText().isEmpty())
+                                        {
+                                            profile.setTfLogin("Input new login");
+                                        }
+                                        else
+                                        {
+                                            String serverAddress = "http://localhost:8080/";
+                                            HessianProxyFactory factory = new HessianProxyFactory();
+                                            RequestManagerApi apiTest = null;
+                                            try {
+                                                apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
+                                            } catch (MalformedURLException e2) {
+                                                e2.printStackTrace();
+                                            }
+                                            apiTest.updateAccountInformation(profile.getTfLogin().getText(),profile.getTfPassword().getText());
+                                        }
+                                    }
+                                });
                             }
                         });
                         //ЛОГАУТ (5 кнопка навигации mainFrameUser),
                         // они сами по себе  идут друг за другом.
-
                         mainFrameUser.getButton(5).addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
@@ -176,10 +278,10 @@ public class Start {
                         cartMarkup.getbCancel().addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                mainPageUser.setCart(picture.getIntermediatePanel());
+                                mainPageContent.setCart(picture.getIntermediatePanel());
                                 cartMarkup.getPanel().setVisible(false);
                                 picture.getIntermediatePanel().setVisible(true);
-                                mainPageUser.getPanel().setVisible(true);
+                                mainPageContent.getPanel().setVisible(true);
                             }
                         });
 
@@ -230,9 +332,9 @@ public class Start {
                                 });
                             }
                         });
-                    } catch (SQLException e1) {
-                        e1.printStackTrace();
                     } catch (ClassNotFoundException e1) {
+                        e1.printStackTrace();
+                    } catch (SQLException e1) {
                         e1.printStackTrace();
                     }
                 } else {
@@ -287,4 +389,5 @@ public class Start {
         });
     }
 }
+
 

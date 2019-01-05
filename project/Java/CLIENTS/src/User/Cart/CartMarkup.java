@@ -25,8 +25,6 @@ public class CartMarkup {
     WebPanel mainPanel = new WebPanel();
     GridBagLayout gbL = new GridBagLayout();
 
-    private GridBagConstraints constraintsCart = new GridBagConstraints();
-
     WebButton bCancel = new WebButton("Cancel");
     WebButton bConfirm = new WebButton("Confirm");
 
@@ -103,6 +101,7 @@ public class CartMarkup {
         lDeliveryAdress.setFontName("Times new Roman");
         lDeliveryAdress.setFontSize(25);
 
+        GridBagConstraints constraintsCart = new GridBagConstraints();
         constraintsCart.fill = GridBagConstraints.BOTH;
         constraintsCart.gridx = 0;
         constraintsCart.gridy = 0;

@@ -64,7 +64,7 @@ public class Rations {
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 1;
         constraints.gridy = 0;
-        constraints.ipadx = 300;
+        constraints.ipadx = 400;
         constraints.gridheight = 1;
         constraints.ipady = 10;
         constraints.anchor = GridBagConstraints.CENTER;
@@ -74,7 +74,7 @@ public class Rations {
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 1;
         constraints.gridy = 1;
-        constraints.ipadx = 300;
+        constraints.ipadx = 400;
         constraints.ipady = 75;
         constraints.gridheight = 1;
         constraints.anchor = GridBagConstraints.CENTER;
@@ -84,7 +84,7 @@ public class Rations {
         constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.gridx = 1;
         constraints.gridy = 2;
-        constraints.ipadx = 300;
+        constraints.ipadx = 400;
         constraints.ipady = 10;
         constraints.gridheight = 1;
         constraints.anchor = GridBagConstraints.CENTER;

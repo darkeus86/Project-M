@@ -18,7 +18,7 @@
 <web-app>
     <servlet>
         <servlet-name>ds</servlet-name>
-        <servlet-class>server.Abuse_api</servlet-class>
+        <servlet-class>server.AbuseApi</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ds</servlet-name>
