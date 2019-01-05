@@ -229,6 +229,7 @@ public class Start {
                                                 profile.getTfSecongName().getText(),
                                                 profile.getGroup().getSelection().getActionCommand(),
                                                 profile.getTfEmail().getText()));
+
                                     }
                                 });
                                 profile.getbSaveAccoundChangeInfo().addActionListener(new ActionListener() {
@@ -257,7 +258,7 @@ public class Start {
                                             } catch (MalformedURLException e2) {
                                                 e2.printStackTrace();
                                             }
-                                            apiTest.updateAccountInformation(profile.getTfLogin().getText(),profile.getTfPassword().getText());
+                                            apiTest.updateAccountInformation(loginId1,profile.getTfLogin().getText(),profile.getTfPassword().getText());
                                         }
                                     }
                                 });

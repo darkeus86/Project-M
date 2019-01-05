@@ -11,5 +11,7 @@
     <orderEntry type="library" name="jcalendar-1.4" level="project" />
     <orderEntry type="library" name="hessian-4.0.51" level="project" />
     <orderEntry type="module" module-name="CLIENTS" />
+    <orderEntry type="library" name="servlet-api-2.2" level="project" />
+    <orderEntry type="library" name="postgresql-42.2.5" level="application" />
   </component>
 </module>

@@ -6,10 +6,14 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="hessian-4.0.51" />
           <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="weblaf-complete-1.29" />
+          <element id="library" level="project" name="jcalendar-1.4" />
         </element>
         <element id="directory" name="classes">
           <element id="module-output" name="SERVER" />
           <element id="module-output" name="API" />
+          <element id="module-output" name="CLIENTS" />
+          <element id="module-output" name="project" />
         </element>
         <element id="file-copy" path="$PROJECT_DIR$/SERVER/web.xml" />
       </element>

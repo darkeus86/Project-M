@@ -402,8 +402,6 @@ public class Operator extends WebFrame {
                         boolean validation = (apiTest.selectValidationRegistration(registration.getLogin().getText()));
 
                         if ((validation) && (pass.equals(repeatPass))) {
-                            System.out.print("registration test");
-                            System.out.print(registration.getPfPassword().getText());
                             registration.dispose();
                             authorizationWindow.setVisible(true);
                             try {
