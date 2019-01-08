@@ -25,7 +25,7 @@ public interface RequestManagerApi {
 
     boolean updateStatus(int orderId, int status)throws ClassNotFoundException, SQLException;
 
-    boolean insertReports(int i, String alexey_kravchenko, String s, String toString)throws ClassNotFoundException, SQLException;
+    boolean insertReports(int id, String reporter, String subject, String date)throws ClassNotFoundException, SQLException;
 
     ArrayList<Reports> selectReportsOperator() throws ClassNotFoundException, SQLException;
 }

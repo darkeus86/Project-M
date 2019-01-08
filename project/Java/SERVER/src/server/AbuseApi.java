@@ -377,18 +377,65 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
     }
 
     @Override
-    public boolean updateStatus(int orderId, int status) {
+    public boolean updateStatus(int orderId, int status) throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Couriers";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ResultSet rs = statement.executeQuery("UPDATE public.\"Orders\" SET status=" + status + "WHERE id=" +
+                orderId + ";");
         return false;
     }
 
     @Override
-    public boolean insertReports(int i, String alexey_kravchenko, String s, String toString) throws ClassNotFoundException, SQLException {
-        return false;
+    public boolean insertReports(int id, String reporter, String subject, String date) throws ClassNotFoundException,
+            SQLException {
+            try {
+                Class.forName("org.postgresql.Driver");
+                String url = "jdbc:postgresql://localhost:5432/Reports";
+                String login = "postgres";
+                String password = "postgres";
+                Connection con = DriverManager.getConnection(url, login, password);
+                Statement statement = con.createStatement();
+                statement.executeUpdate("INSERT INTO public.\"Reports\"" +
+                        "VALUES (" + id+ ",\'" + reporter + "\',\'" + subject + "\', \'" +date+"\');");
+                return true;
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return false;
     }
 
     @Override
     public ArrayList<Reports> selectReportsOperator() throws ClassNotFoundException, SQLException {
-        return null;
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Reports";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ArrayList<Reports> ordersList = new ArrayList<Reports>();
+
+        ResultSet rs = statement.executeQuery("SELECT *FROM public.\"Reports\";");
+
+
+        while (rs.next()){
+            Reports reports = new Reports();
+            reports.setId(Integer.parseInt(rs.getString("id")));
+            reports.setReporter(rs.getString("reporter"));
+            reports.setSubject(rs.getString("subject"));
+            reports.setDate(rs.getString("date"));
+            ordersList.add(reports);
+        }
+        rs.close();
+        con.close();
+        return ordersList;
     }
 
 
