@@ -12,15 +12,13 @@ import java.awt.event.ActionListener;
 
 
 public class PaymentPopUp {
-    WebFrame paymentFrame = new WebFrame();
-    WebPasswordField pfCVC = new WebPasswordField();
-    WebTextField tfCardNumber = new WebTextField();
-    WebTextField tfFirstName = new WebTextField();
-    WebTextField tfSecondName = new WebTextField();
-    WebButton bPay = new WebButton("Pay!");
-    WebButton bCancel = new WebButton("Cancel");
-    GridBagLayout gbL = new GridBagLayout();
-    GridBagConstraints constraints = new GridBagConstraints();
+    private final WebFrame paymentFrame = new WebFrame();
+    private final WebPasswordField pfCVC = new WebPasswordField();
+    private final WebTextField tfCardNumber = new WebTextField();
+    private final WebTextField tfFirstName = new WebTextField();
+    private final WebTextField tfSecondName = new WebTextField();
+    private final WebButton bPay = new WebButton("Pay!");
+    private final WebButton bCancel = new WebButton("Cancel");
     boolean confirmSuccess = false;
     public WebPasswordField getPfCVC() {
         return pfCVC;
@@ -48,9 +46,7 @@ public class PaymentPopUp {
 
     public boolean fieldValidation()
     {
-        if (tfFirstName.getText().trim().length() != 0 && tfSecondName.getText().trim().length()!=0 && pfCVC.getPassword().toString().trim().length()!= 0 && tfCardNumber.getText().trim().length()!=0)
-            return true;
-        else return false;
+        return tfFirstName.getText().trim().length() != 0 && tfSecondName.getText().trim().length() != 0 && pfCVC.getPassword().toString().trim().length() != 0 && tfCardNumber.getText().trim().length() != 0;
     }
 
     public PaymentPopUp()
@@ -69,46 +65,52 @@ public class PaymentPopUp {
         tfFirstName.setBorder(BorderFactory.createTitledBorder("First name"));
         tfSecondName.setBorder(BorderFactory.createTitledBorder("Second name"));
 
+        GridBagLayout gbL = new GridBagLayout();
         paymentFrame.setLayout(gbL);
         paymentFrame.setTitle("Payment");
+        GridBagConstraints constraints = new GridBagConstraints();
         constraints.fill=GridBagConstraints.BOTH;
         constraints.ipadx = 100;
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 3;
-        paymentFrame.add(tfCardNumber,constraints);
+        paymentFrame.add(tfCardNumber, constraints);
 
         constraints.fill=GridBagConstraints.BOTH;
         constraints.gridx = 0;
         constraints.gridy = 1;
         constraints.gridwidth = 1;
-        paymentFrame.add(pfCVC,constraints);
+        paymentFrame.add(pfCVC, constraints);
 
         constraints.fill=GridBagConstraints.BOTH;
         constraints.gridx = 1;
         constraints.gridy = 1;
         constraints.gridwidth = 1;
-        paymentFrame.add(tfFirstName,constraints);
+        paymentFrame.add(tfFirstName, constraints);
 
         constraints.fill=GridBagConstraints.BOTH;
         constraints.gridx = 2;
         constraints.gridy = 1;
         constraints.gridwidth = 1;
-        paymentFrame.add(tfSecondName,constraints);
+        paymentFrame.add(tfSecondName, constraints);
 
         constraints.fill=GridBagConstraints.BOTH;
         constraints.gridx = 2;
         constraints.gridy = 2;
         constraints.gridwidth = 1;
-        paymentFrame.add(bPay,constraints);
+        paymentFrame.add(bPay, constraints);
 
         constraints.fill=GridBagConstraints.BOTH;
         constraints.gridx = 0;
         constraints.gridy = 2;
         constraints.gridwidth = 1;
-        paymentFrame.add(bCancel,constraints);
-        paymentFrame.setVisible(true);
+        paymentFrame.add(bCancel, constraints);
+
+
+        paymentFrame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
         paymentFrame.pack();
+        paymentFrame.setLocationRelativeTo(null);
+        paymentFrame.setVisible(true);
     }
 
     public WebFrame getPaymentFrame() {

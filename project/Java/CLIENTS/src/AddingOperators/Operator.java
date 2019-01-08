@@ -9,8 +9,8 @@ import java.net.MalformedURLException;
 import java.sql.SQLException;
 import java.text.ParseException;
 
-public class Operator {
- public static void main(String[] args) throws SQLException, ClassNotFoundException, ParseException {
+class Operator {
+ public static void main(String[] args) throws ParseException {
      WindowAddingOperator windowAddingOperator = new WindowAddingOperator();
      windowAddingOperator.init();
 

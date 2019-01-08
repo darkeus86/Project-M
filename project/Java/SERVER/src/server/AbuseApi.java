@@ -6,41 +6,12 @@ import com.caucho.hessian.server.HessianServlet;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static java.lang.Class.forName;
+
 
 
 public  class AbuseApi extends HessianServlet implements RequestManagerApi {
-
-
     @Override
-    public boolean insertProfileInformation(String loginId, String firstName, String SecondName, String gender, String email)
-    {
-        return false;
-    }
-
-    @Override
-    public boolean insertReports(int id, String reporter, String subject, String date) throws ClassNotFoundException,
-            SQLException {
-        try {
-            forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/Reports";
-            String login = "postgres";
-            String password = "postgres";
-            Connection con = DriverManager.getConnection(url, login, password);
-            Statement statement = con.createStatement();
-            statement.executeUpdate("INSERT INTO public.\"Reports\"" +
-                    "VALUES (" + id+ ",\'" + reporter + "\',\'" + subject + "\', \'" +date+"\');");
-            return true;
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
-    @Override
-    public boolean insertOrderRequest(int id, String date, String city, String street, int house, int housing, int room, String time, String rationTitle, int price, String personName, String personSecondName, String phone, String UserLogin) throws ClassNotFoundException, SQLException {
+    public void insertOrderRequest(int id, String date, String city, String street, int house, int housing, int room, String time, String rationTitle, int price, String personName, String personSecondName, String phone, String UserLogin) throws ClassNotFoundException {
         try {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://localhost:5432/Orders";
@@ -52,11 +23,9 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
                     "INSERT INTO public.\"Orders\"" +
                             "VALUES (" + id + ",\'" + date + "\',\'" + city + "\',\'" + street + "\'," + house + "," + housing + "," + room + ",\'" + time + "\',\'" + rationTitle + "\'," + price + ",\'" + personName + "\',\'" + personSecondName + "\',\'" + phone + "\',\'" + UserLogin + "\')");
 
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
     }
 
     @Override
@@ -96,27 +65,25 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
         return id;
     }
 
-    public boolean insertSimpleUser(String loginFromUser, String passwordFromUser) {
+    public void insertSimpleUser(String loginFromUser, String passwordFromUser) {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/Orders";
+            String url = "jdbc:postgresql://localhost:5432/SimpleUsers";
             String login = "postgres";
             String password = "postgres";
             Connection con = DriverManager.getConnection(url, login, password);
             Statement statement = con.createStatement();
             statement.executeUpdate("INSERT INTO public.\"SimpleUsers\"" +
                     "VALUES (\'" + loginFromUser + "\',\'" + passwordFromUser + "\');");
-            return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
     }
 
     @Override
-    public boolean insertCourier(int id,String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException {
+    public void insertCourier(int id, String firstName, String secondName, String phone) {
         try {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://localhost:5432/Couriers";
@@ -126,6 +93,24 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
             Statement statement = con.createStatement();
             statement.executeUpdate("INSERT INTO public.\"Couriers\"" +
                     "VALUES (" + id+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +phone+"\');");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public boolean insertProfileInformation(String loginId, String firstName, String secondName, String gender, String email) {
+        try {
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/ProfileInformation";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("INSERT INTO public.\"ProfileInformation\"" +
+                    "VALUES (" + loginId+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +gender+"\',\'"+email+"\');");
             return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -135,8 +120,29 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
         return false;
     }
 
+
     @Override
-    public boolean insertOperator(int id, String firstName, String secondName, String phone) throws ClassNotFoundException, SQLException {
+    public void updateAccountInformation(String oldLogin, String newLogin, String newPassword) {
+        try {
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost:5432/SimpleUsers";
+            String login = "postgres";
+            String password = "postgres";
+            Connection con = DriverManager.getConnection(url, login, password);
+            Statement statement = con.createStatement();
+            statement.executeUpdate("UPDATE public.\"SimpleUsers\""+
+            "SET \"Login\"=\'"+newLogin+"\',\"Password\"=\'"+newPassword+"\'"+
+            "WHERE \"Login\"=\'"+oldLogin+"\';");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @Override
+    public void insertOperator(int id, String firstName, String secondName, String phone) {
         try {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://localhost:5432/Operators";
@@ -146,44 +152,18 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
             Statement statement = con.createStatement();
             statement.executeUpdate("INSERT INTO public.\"Operators\"" +
                     "VALUES (" + id+ ",\'" + firstName + "\',\'" + secondName+ "\', \'" +phone+"\');");
-            return true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
     }
 
-    @Override
-    public boolean insertTechnicalReport(int version, String license, String eMail, String subject, String name) throws ClassNotFoundException, SQLException {
-        try {
-            Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/TechnicalReports";
-            String login = "postgres";
-            String password = "postgres";
-            Connection con = DriverManager.getConnection(url, login, password);
-            Statement statement = con.createStatement();
-            statement.executeUpdate("INSERT INTO public.\"TechnicalReports\"" +
-                    "VALUES (" + version+ ",\'" + license + "\',\'" + eMail + "\', \'" + subject + "\', \'" + name + "\');");
-            return true;
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
-    @Override
-    public boolean updateAccountInformation(String login, String password) {
-        return false;
-    }
 
     public boolean selectValidationRegistration(String loginFromUser) {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/Orders";
+            String url = "jdbc:postgresql://localhost:5432/SimpleUsers";
             String login = "postgres";
             String password = "postgres";
             Connection con = DriverManager.getConnection(url, login, password);
@@ -193,11 +173,7 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
             );
 
             rs.next();
-            if (rs.getRow() == 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return rs.getRow() == 0;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -210,7 +186,7 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
     public boolean selectValidationAuthorization(String loginFromUser, String passwordFromUser) {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://localhost:5432/Orders";
+            String url = "jdbc:postgresql://localhost:5432/SimpleUsers";
             String login = "postgres";
             String password = "postgres";
             Connection con = DriverManager.getConnection(url, login, password);
@@ -327,46 +303,95 @@ public  class AbuseApi extends HessianServlet implements RequestManagerApi {
 
     }
 
+
     @Override
-    public boolean updateStatus(int orderId, int status) throws ClassNotFoundException, SQLException {
-        forName("org.postgresql.Driver");
-        String url = "jdbc:postgresql://localhost:5432/Couriers";
+    public String[] selectInfoForRationPopUpLeft(String title) throws ClassNotFoundException, SQLException {
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/RationsInformation";
         String login = "postgres";
         String password = "postgres";
         Connection con = DriverManager.getConnection(url, login, password);
         Statement statement = con.createStatement();
 
-        ResultSet rs = statement.executeQuery("UPDATE public.\"Orders\" SET status=" + status + "WHERE id=" +
-                orderId + ";");
+        ResultSet rs = statement.executeQuery("SELECT \"RationTitle\", \"Breakfast\", \"BProteins\", \"BFats\", \"BCarbohydrates\", \"BKkl\", \"SecondBreakfast\", \"SBProteins\", \"SBFats\", \"SBCarbohydrates\", \"SBKkl\", \"Dinner\", \"DProteins\", \"DFats\", \"DCarbohydrates\", \"DKkl\", \"AfternoonSnack\", \"ASProteins\", \"ASFats\", \"ASCarbohydrates\", \"ASKkl\", \"EveningMeal\", \"EMProteins\", \"EMFats\", \"EMCarbohydrates\", \"EMKkl\""
+                +    " FROM public.\"RationsInformation\" where \"RationTitle\" ="+"\'"+title+"\';");
+
+        String[] treeBranch = new String[6];
+        while (rs.next()){
+          treeBranch[0] = rs.getString("RationTitle");
+          treeBranch[1] = rs.getString("Breakfast");
+          treeBranch[2] = rs.getString("SecondBreakfast");
+          treeBranch[3] = rs.getString("Dinner");
+          treeBranch[4] = rs.getString("AfternoonSnack");
+          treeBranch[5] = rs.getString("EveningMeal");
+        }
+        rs.close();
+        con.close();
+
+        return treeBranch;
+    }
+
+    @Override
+    public float[] selectInfoForRationPopRight(String title) throws ClassNotFoundException, SQLException {
+
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/RationsInformation";
+        String login = "postgres";
+        String password = "postgres";
+        Connection con = DriverManager.getConnection(url, login, password);
+        Statement statement = con.createStatement();
+
+        ResultSet rs = statement.executeQuery("SELECT \"RationTitle\", \"Breakfast\", \"BProteins\", \"BFats\", \"BCarbohydrates\", \"BKkl\", \"SecondBreakfast\", \"SBProteins\", \"SBFats\", \"SBCarbohydrates\", \"SBKkl\", \"Dinner\", \"DProteins\", \"DFats\", \"DCarbohydrates\", \"DKkl\", \"AfternoonSnack\", \"ASProteins\", \"ASFats\", \"ASCarbohydrates\", \"ASKkl\", \"EveningMeal\", \"EMProteins\", \"EMFats\", \"EMCarbohydrates\", \"EMKkl\""
+                +    " FROM public.\"RationsInformation\" where \"RationTitle\" ="+"\'"+title+"\';");
+
+        float[] protFatCar= new float[20];
+
+
+        while (rs.next()){
+                    protFatCar[0] = rs.getFloat("BProteins");
+                    protFatCar[1] =        rs.getFloat("BFats");
+                    protFatCar[2] = rs.getFloat("BCarbohydrates");
+                    protFatCar[3] =rs.getFloat("BKkl");
+                    protFatCar[4] = rs.getFloat("SBProteins");
+                    protFatCar[5] =rs.getFloat("SBFats");
+                    protFatCar[6] = rs.getFloat("SBCarbohydrates");
+                    protFatCar[7] = rs.getFloat("SBKkl");
+                    protFatCar[8] = rs.getFloat("DProteins");
+                    protFatCar[9] =  rs.getFloat("DFats");
+                    protFatCar[10] =  rs.getFloat("DCarbohydrates");
+                    protFatCar[11] =   rs.getFloat("DKkl");
+                    protFatCar[12] = rs.getFloat("ASProteins");
+                    protFatCar[13] =  rs.getFloat("ASFats");
+                    protFatCar[14] = rs.getFloat("ASCarbohydrates");
+                    protFatCar[15] = rs.getFloat("ASKkl");
+                    protFatCar[16] =  rs.getFloat("EMProteins");
+                    protFatCar[17] =  rs.getFloat("EMFats");
+                    protFatCar[18] =  rs.getFloat("EMCarbohydrates");
+                    protFatCar[19] =    rs.getFloat("EMKkl");
+
+        }
+        rs.close();
+        con.close();
+
+        return protFatCar;
+    }
+
+    @Override
+    public boolean updateStatus(int orderId, int status) {
+        return false;
+    }
+
+    @Override
+    public boolean insertReports(int i, String alexey_kravchenko, String s, String toString) throws ClassNotFoundException, SQLException {
         return false;
     }
 
     @Override
     public ArrayList<Reports> selectReportsOperator() throws ClassNotFoundException, SQLException {
-        forName("org.postgresql.Driver");
-        String url = "jdbc:postgresql://localhost:5432/Reports";
-        String login = "postgres";
-        String password = "postgres";
-        Connection con = DriverManager.getConnection(url, login, password);
-        Statement statement = con.createStatement();
-
-        ArrayList<Reports> ordersList = new ArrayList<Reports>();
-
-        ResultSet rs = statement.executeQuery("SELECT *FROM public.\"Reports\";");
-
-
-        while (rs.next()){
-            Reports reports = new Reports();
-            reports.setId(Integer.parseInt(rs.getString("id")));
-            reports.setReporter(rs.getString("reporter"));
-            reports.setSubject(rs.getString("subject"));
-            reports.setDate(rs.getString("date"));
-            ordersList.add(reports);
-        }
-        rs.close();
-        con.close();
-        return ordersList;
+        return null;
     }
+
+
 }
 
 

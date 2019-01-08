@@ -1,9 +1,9 @@
 package User.RationMurkup;
 
-public class RationDataFromDatabase {
-    String title = new String();
-    String description = new String();
-    int price ;
+class RationDataFromDatabase {
+    private String title = "";
+    private String description = "";
+    private int price ;
 
     public RationDataFromDatabase()
     {

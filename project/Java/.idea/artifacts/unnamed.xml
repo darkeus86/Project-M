@@ -8,6 +8,7 @@
           <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="weblaf-complete-1.29" />
           <element id="library" level="project" name="jcalendar-1.4" />
+          <element id="library" level="application" name="postgresql-42.2.5" />
         </element>
         <element id="directory" name="classes">
           <element id="module-output" name="SERVER" />

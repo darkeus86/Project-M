@@ -11,22 +11,16 @@ import java.awt.*;
 
 public class Registration extends WebFrame {
 
-    public WebLabel welcome = new WebLabel("Registration");
-
-    public WebLabel loginLabel = new WebLabel("Create login");
-    public WebLabel lPassword= new WebLabel("Create password");
-    public WebLabel lRepeatPassword= new WebLabel("Repeat password");
-    public WebTextField login = new WebTextField();
-    public WebPasswordField pfPassword = new WebPasswordField();
-    public WebPasswordField pfRepeatPassword = new WebPasswordField();
-    public WebPanel mainPanel;
-    public WebButton bRegistration = new WebButton("Go to use!");
+    private final WebTextField login = new WebTextField();
+    private final WebPasswordField pfPassword = new WebPasswordField();
+    private final WebPasswordField pfRepeatPassword = new WebPasswordField();
+    private final WebButton bRegistration = new WebButton("Go to use!");
 
     public WebButton getbCancel() {
         return bCancel;
     }
 
-    public WebButton bCancel = new WebButton("<- Go back <-");
+    private final WebButton bCancel = new WebButton("<- Go back <-");
     public Registration()
     {
         super("User.Project-M");
@@ -36,11 +30,11 @@ public class Registration extends WebFrame {
         bRegistration.setPreferredSize(147, 40);
 
 
-
-        mainPanel = new WebPanel();
+        WebPanel mainPanel = new WebPanel();
         mainPanel.setLayout(null);
 
 //      ###WELCOME LABEL###
+        WebLabel welcome = new WebLabel("Registration");
         welcome.setVerticalAlignment(WebLabel.CENTER);
         welcome.setHorizontalAlignment(WebLabel.CENTER);
         welcome.setFontSize(30);
@@ -55,10 +49,13 @@ public class Registration extends WebFrame {
 
         additionalPanel.setLayout(new GridLayout(9, 0, 5, 12));
         additionalPanel.add(welcome);
+        WebLabel loginLabel = new WebLabel("Create login");
         additionalPanel.add(loginLabel);
         additionalPanel.add(login);
+        WebLabel lPassword = new WebLabel("Create password");
         additionalPanel.add(lPassword);
         additionalPanel.add(pfPassword);
+        WebLabel lRepeatPassword = new WebLabel("Repeat password");
         additionalPanel.add(lRepeatPassword);
         additionalPanel.add(pfRepeatPassword);
         additionalPanel.add(bRegistration);
@@ -66,7 +63,9 @@ public class Registration extends WebFrame {
 
         getContentPane().add(mainPanel); //   метод отрисовки
         getContentPane().add(mainPanel); //   метод отрисовки
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 

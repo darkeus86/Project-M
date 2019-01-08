@@ -1,39 +1,32 @@
 package Operator;
 
-public class Content {
+class Content {
 
     public static String getFirstName(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getSecondName(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getPhone(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getAddress(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getTitle(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getDesiredTime(){
-        String s = new String();
-        return s;
+        return "";
     }
 
     public static String getStatus(){
-        String s = new String();
-        return s;
+        return "";
     }
 }

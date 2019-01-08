@@ -4,7 +4,6 @@ import com.alee.extended.image.WebImage;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
-import com.alee.laf.text.WebTextArea;
 import com.alee.laf.text.WebTextField;
 
 import javax.swing.*;
@@ -13,17 +12,14 @@ import java.awt.*;
 
 public class Rations {
 
-    WebPanel mainPanel = new WebPanel();
-    WebLabel lTitle;
+    private final WebPanel mainPanel = new WebPanel();
+    private WebLabel lTitle;
 
-   WebTextField tfDescription;
+   private WebTextField tfDescription;
 
-    WebImage img;
-    WebButton bToOrder = new WebButton("To order");
-    WebLabel lPrice;
-
-    GridBagLayout gbL = new GridBagLayout();
-    private GridBagConstraints constraints = new GridBagConstraints();
+    private WebImage img;
+    private final WebButton bToOrder = new WebButton("To order");
+    private WebLabel lPrice;
 
     public Rations(String title, String description, String price, WebImage picture) {
         lTitle = new WebLabel(title);
@@ -39,8 +35,10 @@ public class Rations {
         img = picture;
         lPrice = new WebLabel(price);
 
+        GridBagLayout gbL = new GridBagLayout();
         mainPanel.setLayout(gbL);
 
+        GridBagConstraints constraints = new GridBagConstraints();
         constraints.fill = GridBagConstraints.BOTH;
         constraints.gridx = 0;
         constraints.gridy = 0;

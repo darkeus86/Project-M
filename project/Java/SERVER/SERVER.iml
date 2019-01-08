@@ -12,5 +12,9 @@
     <orderEntry type="module" module-name="CLIENTS" exported="" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" exported="" name="postgresql-42.2.5" level="application" />
+    <orderEntry type="library" exported="" name="weblaf-complete-1.29" level="project" />
+    <orderEntry type="library" exported="" name="jcalendar-1.4" level="project" />
+    <orderEntry type="library" exported="" name="servlet-api-2.2" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.12" level="application_server_libraries" />
   </component>
 </module>

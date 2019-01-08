@@ -11,16 +11,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Locale;
 
-public class Login extends WebFrame {
+class Login extends WebFrame {
 
-    protected WebLabel welcome = new WebLabel("Welcome");
-    protected static WebButton logButton;
-    protected WebLabel loginLabel = new WebLabel("Login");
-    protected WebLabel passwordLabel= new WebLabel("Password");
-    protected WebTextField login = new WebTextField();
-    protected WebPasswordField password = new WebPasswordField();
-    protected GridBagLayout gridBagLayout = new GridBagLayout();
-    protected static GridBagConstraints c = new GridBagConstraints();
+    private static final GridBagConstraints c = new GridBagConstraints();
 
     public Login()
     {
@@ -30,14 +23,20 @@ public class Login extends WebFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setLocale(new Locale("en"));
+        GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
 
-        logButton = new WebButton("Login");
+        WebButton logButton = new WebButton("Login");
 
+        WebLabel welcome = new WebLabel("Welcome");
         welcome.setFont(new Font("Times New Roman", Font.BOLD, 42));
+        WebLabel loginLabel = new WebLabel("Login");
         loginLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+        WebLabel passwordLabel = new WebLabel("Password");
         passwordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+        WebTextField login = new WebTextField();
         login.setFontSize(15);
+        WebPasswordField password = new WebPasswordField();
         password.setFontSize(15);
 
 

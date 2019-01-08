@@ -1,6 +1,6 @@
 package User.MainPageContentContainer;
 
-public class MainPageContentContainer {
+class MainPageContentContainer {
 
 
 }

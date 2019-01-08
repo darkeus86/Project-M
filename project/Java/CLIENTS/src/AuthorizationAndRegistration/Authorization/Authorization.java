@@ -1,6 +1,5 @@
 package AuthorizationAndRegistration.Authorization;
 
-import ApiProjectM.RequestManagerApi;
 import com.alee.laf.button.*;
 import com.alee.laf.label.WebLabel;
 import com.alee.laf.panel.WebPanel;
@@ -8,24 +7,20 @@ import com.alee.laf.rootpane.WebFrame;
 import com.alee.laf.text.WebPasswordField;
 
 import com.alee.laf.text.WebTextField;
-import com.caucho.hessian.client.HessianProxyFactory;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.net.MalformedURLException;
 
 public class Authorization extends WebFrame {
 
-    public WebLabel welcome = new WebLabel("Welcome");
-    public WebButton logButton = new WebButton("Sign in");
-    public WebLabel loginLabel = new WebLabel("Login");
-    public WebLabel passwordLabel= new WebLabel("Password");
-    public WebTextField login = new WebTextField();
-    public WebPasswordField password = new WebPasswordField();
-    public WebPanel mainPanel = new WebPanel();
-    public WebButton bRegistration = new WebButton("Registration");
-    public WebButton bLogButton = new WebButton("Login");
+    private final WebLabel welcome = new WebLabel("Welcome");
+    private final WebButton logButton = new WebButton("Sign in");
+    private final WebLabel loginLabel = new WebLabel("Login");
+    private final WebLabel passwordLabel= new WebLabel("Password");
+    private final WebTextField login = new WebTextField();
+    private final WebPasswordField password = new WebPasswordField();
+    private final WebPanel mainPanel = new WebPanel();
+    private final WebButton bRegistration = new WebButton("Registration");
+    private final WebButton bLogButton = new WebButton("Login");
 
     public Authorization()
     {
@@ -58,6 +53,9 @@ public class Authorization extends WebFrame {
 
         getContentPane().add(mainPanel); //   метод отрисовки
         getContentPane().add(mainPanel); //   метод отрисовки
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 

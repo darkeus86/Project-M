@@ -3,19 +3,18 @@ package User.Cart;
 import com.alee.extended.image.WebImage;
 import com.alee.laf.panel.WebPanel;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class IntermediatePicture {
-    WebPanel intermediatePanel;
-    WebImage img;
+    private final WebPanel intermediatePanel;
+
     public WebPanel getIntermediatePanel() {
         return intermediatePanel;
     }
 
     public IntermediatePicture()
     {
-        img = new WebImage(".idea/resource/images/cart.png");
+        WebImage img = new WebImage(".idea/resource/images/cart.png");
         intermediatePanel = new WebPanel();
         intermediatePanel.setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();

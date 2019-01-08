@@ -1,42 +1,37 @@
 package User.profileMarkup;
 
 import com.alee.extended.image.WebImage;
-import com.alee.extended.panel.WebButtonGroup;
 import com.alee.laf.button.WebButton;
 import com.alee.laf.label.WebLabel;
-import com.alee.laf.menu.WebRadioButtonMenuItem;
 import com.alee.laf.panel.WebPanel;
-import com.alee.laf.radiobutton.WebRadioButton;
-import com.alee.laf.radiobutton.WebRadioButtonUI;
 import com.alee.laf.text.WebTextField;
-import javafx.scene.control.RadioButton;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class profileMarkup {
-    WebPanel pProfile;
-    WebLabel lUserName = new WebLabel("Username");
-    WebLabel lAccountManagment = new WebLabel("Account managment");
-    WebTextField tfFirstName= new WebTextField();
-    WebTextField tfSecongName = new WebTextField();
-    WebTextField tfEmail = new WebTextField();
-    WebTextField tfLogin = new WebTextField();
-    WebTextField tfPassword = new WebTextField();
-    JRadioButton rbMale = new JRadioButton("Male");
-    JRadioButton rbFemale= new JRadioButton("Female");
-    WebImage iAvatar= new WebImage(".idea/resource/images/diet.png");
-    WebButton bSaveProfileInfo = new WebButton("Save");
-    WebButton bSaveAccoundChangeInfo = new WebButton("Save");
-    ButtonGroup group = new ButtonGroup();
+    private WebPanel pProfile;
+    private WebLabel lUserName = new WebLabel("Username");
+    private WebLabel lAccountManagment = new WebLabel("Account managment");
+    private final WebTextField tfFirstName= new WebTextField();
+    private final WebTextField tfSecongName = new WebTextField();
+    private WebTextField tfEmail = new WebTextField();
+    private final WebTextField tfLogin = new WebTextField();
+    private final WebTextField tfPassword = new WebTextField();
+    private JRadioButton rbMale = new JRadioButton("Male");
+    private JRadioButton rbFemale= new JRadioButton("Female");
+    private WebImage iAvatar= new WebImage(".idea/resource/images/diet.png");
+    private WebButton bSaveProfileInfo = new WebButton("Save");
+    private WebButton bSaveAccoundChangeInfo = new WebButton("Save");
+    private ButtonGroup group = new ButtonGroup();
 
     public ButtonGroup getGroup() {
         return group;
     }
 
-    GridBagLayout gbl = new GridBagLayout();
-    GridBagConstraints constraints = new GridBagConstraints();
-    WebPanel containerPanel = new WebPanel();
+    private GridBagLayout gbl = new GridBagLayout();
+    private GridBagConstraints constraints = new GridBagConstraints();
+    private WebPanel containerPanel = new WebPanel();
 
     public WebButton getbSaveProfileInfo() {
         return bSaveProfileInfo;

@@ -9,8 +9,8 @@ import java.net.MalformedURLException;
 import java.sql.SQLException;
 import java.text.ParseException;
 
-public class Courier {
- public static void main(String[] args) throws SQLException, ClassNotFoundException, ParseException {
+class Courier {
+ public static void main(String[] args) throws ParseException {
      WindowAddingCourier windowAddingCourier = new WindowAddingCourier();
      windowAddingCourier.init();
 

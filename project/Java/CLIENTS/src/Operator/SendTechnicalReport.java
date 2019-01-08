@@ -7,38 +7,21 @@ import com.alee.laf.text.WebTextField;
 
 import java.awt.*;
 
-public class SendTechnicalReport extends WebFrame {
+class SendTechnicalReport extends WebFrame {
 
-    WebButton send = new WebButton("Send");
-    WebButton cancel = new WebButton("Cancel");
-    WebButton reset = new WebButton("Reset");
+    private static final GridBagConstraints c = new GridBagConstraints();
 
-    WebLabel version = new WebLabel("Project M version:");
-    WebLabel license = new WebLabel("License number:");
-    WebLabel name = new WebLabel("Your name:");
-    WebLabel email = new WebLabel("Your e-mail:");
-    WebLabel subject = new WebLabel("Subject:");
-    WebLabel attachedFiles = new WebLabel("Attached files:");
-    WebLabel head = new WebLabel("Fill the form to send us a report");
-
-    WebTextField versionT = new WebTextField("Project M v1.0(Beta)");
-    WebTextField licenseT = new WebTextField("O00-00-01-A-K");
-    WebTextField nameT = new WebTextField();
-    WebTextField emailT = new WebTextField();
-    WebTextField subjectT = new WebTextField();
-    WebTextField attachedFilesT = new WebTextField();
-
-    protected static GridBagConstraints c = new GridBagConstraints();
-    GridBagLayout gridBagLayout = new GridBagLayout();
-
-    SendTechnicalReport(){
+    private SendTechnicalReport(){
 
         setSize(700,700);
         setLocationRelativeTo(null);
         setResizable(false);
+        GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
 
+        WebTextField versionT = new WebTextField("Project M v1.0(Beta)");
         versionT.setEnabled(false);
+        WebTextField licenseT = new WebTextField("O00-00-01-A-K");
         licenseT.setEnabled(false);
 
        // c.anchor = GridBagConstraints.NORTH;
@@ -53,28 +36,44 @@ public class SendTechnicalReport extends WebFrame {
         c.weighty = 1.0;
         c.weightx = 1.0;
 
-        //send.setPreferredSize(100, 50);
-        //cancel.setPreferredSize(100, 50);
-        //reset.setPreferredSize(100, 50);
+        WebButton cancel = new WebButton("Cancel");
+        WebButton reset = new WebButton("Reset");
+        WebButton send = new WebButton("Send");
 
+        send.setPreferredSize(100, 50);
+        cancel.setPreferredSize(100, 50);
+        reset.setPreferredSize(100, 50);
+
+        WebLabel head = new WebLabel("Fill the form to send us a report");
         add(head, c);
+        WebLabel version = new WebLabel("Project M version:");
         add(version, c);
         add(versionT, c);
+        WebLabel license = new WebLabel("License number:");
         add(license, c);
         add(licenseT, c);
+        WebLabel name = new WebLabel("Your name:");
         add(name, c);
+        WebTextField nameT = new WebTextField();
         add(nameT, c);
+        WebLabel email = new WebLabel("Your e-mail:");
         add(email, c);
+        WebTextField emailT = new WebTextField();
         add(emailT, c);
+        WebLabel subject = new WebLabel("Subject:");
         add(subject, c);
+        WebTextField subjectT = new WebTextField();
         add(subjectT, c);
+        WebLabel attachedFiles = new WebLabel("Attached files:");
         add(attachedFiles, c);
+        WebTextField attachedFilesT = new WebTextField();
         add(attachedFilesT, c);
 
         c.gridx = 1;
         c.gridwidth = 1;
         c.gridy = 13;
         c.insets = new Insets(0, 10, 0, 10);
+
 
         add(send, c);
         c.gridx = 2;

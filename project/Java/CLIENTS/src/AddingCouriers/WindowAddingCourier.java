@@ -10,23 +10,23 @@ import javax.swing.text.MaskFormatter;
 import java.awt.*;
 import java.text.ParseException;
 
-public class WindowAddingCourier {
-    WebFrame mainFrame;
+class WindowAddingCourier {
+    private final WebFrame mainFrame;
 
     public WebButton getbAdd() {
         return bAdd;
     }
 
-    WebPanel mainPanel;
+    private final WebPanel mainPanel;
     WebTextField tfId;
-    WebTextField tfPersonFirstName;
-    WebTextField tfPersonSecondName;
+    private final WebTextField tfPersonFirstName;
+    private final WebTextField tfPersonSecondName;
 
-    MaskFormatter maskTelephone = new MaskFormatter("+7-(###)-###-##-##");
-    JFormattedTextField tfPhone;
-    public WebButton bAdd = new WebButton("Add courier!");
+    private final JFormattedTextField tfPhone;
+    private final WebButton bAdd = new WebButton("Add courier!");
 
     WindowAddingCourier() throws ParseException {
+        MaskFormatter maskTelephone = new MaskFormatter("+7-(###)-###-##-##");
         tfPhone = new JFormattedTextField(maskTelephone);
         mainFrame = new WebFrame();
         mainPanel = new WebPanel();

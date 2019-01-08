@@ -6,6 +6,7 @@ import AuthorizationAndRegistration.Authorization.Authorization;
 import User.Cart.CartMarkup;
 import User.Cart.IntermediatePicture;
 import User.PopUpWindows.PaymentPopUp;
+import User.PopUpWindows.RationInfoPopUp;
 import User.RationMurkup.Rations;
 import AuthorizationAndRegistration.Registration.Registration;
 import User.profileMarkup.profileMarkup;
@@ -13,6 +14,8 @@ import com.alee.extended.image.WebImage;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.net.MalformedURLException;
 import java.sql.*;
 import java.text.ParseException;
@@ -21,9 +24,13 @@ import java.util.ArrayList;
 import ApiProjectM.RequestManagerApi;
 import com.caucho.hessian.client.HessianProxyFactory;
 
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.TreePath;
+
 // баг. Чтобы оформить заказ необходимо сначала нажать на кнопку mainPage в меню слева, иначе главное окно не будет активно.
-public class Start {
-    public static String loginId1;
+class Start {
+    private static String loginId1;
 
     public static void main(String args[]) throws ParseException, MalformedURLException, SQLException, ClassNotFoundException {
         // ТЕСТ СЕРВЛЕТОВ
@@ -158,6 +165,281 @@ public class Start {
 
                                 mainFrameUser.setContent(mainPageContent.getPanel());
 
+                                daily.getImg().addMouseListener(new MouseListener() {
+                                    @Override
+                                    public void mouseClicked(MouseEvent e) {
+                                        String serverAddress = "http://localhost:8080/";
+                                        HessianProxyFactory factory = new HessianProxyFactory();
+                                        RequestManagerApi apiTest = null;
+
+                                        try {
+                                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
+                                        } catch (MalformedURLException e1) {
+                                            e1.printStackTrace();
+                                        }
+
+                                        String[] rationInfo = new String[0];
+                                        float[] protFatCar = new float[20];
+                                        try {
+                                            rationInfo = apiTest.selectInfoForRationPopUpLeft("Daily");
+                                            protFatCar = apiTest.selectInfoForRationPopRight("Daily");
+                                        } catch (ClassNotFoundException e1) {
+                                            e1.printStackTrace();
+                                        } catch (SQLException e1) {
+                                            e1.printStackTrace();
+                                        }
+                                        RationInfoPopUp rationPopUp = new RationInfoPopUp(rationInfo[1],rationInfo[2],rationInfo[3],rationInfo[4],rationInfo[5]);
+                                        rationPopUp.init();
+
+                                        String[] finalRationInfo = rationInfo;
+                                        float[] finalProtFatCar = protFatCar;
+                                        rationPopUp.getJt().addTreeSelectionListener(new TreeSelectionListener() {
+                                            @Override
+                                            public void valueChanged(TreeSelectionEvent e) {
+                                                TreePath path = rationPopUp.getJt().getSelectionPath();
+                                                String treeNodeValue = path.getPathComponent(path.getPathCount()-1).toString().trim();
+                                                System.out.println(path.getPathComponent(path.getPathCount()-1));
+                                                if(treeNodeValue.equals(finalRationInfo[1]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[0]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[1]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[2]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[3]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[2]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[4]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[5]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[6]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[7]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[3]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[8]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[9]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[10]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[11]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[4]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[12]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[13]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[14]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[15]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[5]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[16]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[17]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[18]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[19]));
+                                                }
+
+                                            }
+                                            });
+                                        }
+                                    @Override
+                                    public void mousePressed(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseReleased(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseEntered(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseExited(MouseEvent e) {
+
+                                    }
+                                });
+
+                                fit.getImg().addMouseListener(new MouseListener() {
+                                    @Override
+                                    public void mouseClicked(MouseEvent e) {
+                                        String serverAddress = "http://localhost:8080/";
+                                        HessianProxyFactory factory = new HessianProxyFactory();
+                                        RequestManagerApi apiTest = null;
+
+                                        try {
+                                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
+                                        } catch (MalformedURLException e1) {
+                                            e1.printStackTrace();
+                                        }
+
+                                        String[] rationInfo = new String[0];
+                                        float[] protFatCar = new float[20];
+                                        try {
+                                            rationInfo = apiTest.selectInfoForRationPopUpLeft("Fit");
+                                            protFatCar = apiTest.selectInfoForRationPopRight("Fit");
+                                        } catch (ClassNotFoundException e1) {
+                                            e1.printStackTrace();
+                                        } catch (SQLException e1) {
+                                            e1.printStackTrace();
+                                        }
+                                        RationInfoPopUp rationPopUp = new RationInfoPopUp(rationInfo[1],rationInfo[2],rationInfo[3],rationInfo[4],rationInfo[5]);
+                                        rationPopUp.init();
+
+                                        String[] finalRationInfo = rationInfo;
+                                        float[] finalProtFatCar = protFatCar;
+                                        rationPopUp.getJt().addTreeSelectionListener(new TreeSelectionListener() {
+                                            @Override
+                                            public void valueChanged(TreeSelectionEvent e) {
+                                                TreePath path = rationPopUp.getJt().getSelectionPath();
+                                                String treeNodeValue = path.getPathComponent(path.getPathCount()-1).toString().trim();
+                                                System.out.println(path.getPathComponent(path.getPathCount()-1));
+                                                if(treeNodeValue.equals(finalRationInfo[1]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[0]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[1]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[2]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[3]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[2]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[4]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[5]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[6]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[7]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[3]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[8]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[9]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[10]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[11]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[4]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[12]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[13]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[14]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[15]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[5]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[16]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[17]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[18]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[19]));
+                                                }
+
+                                            }
+                                        });
+                                    }
+                                    @Override
+                                    public void mousePressed(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseReleased(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseEntered(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseExited(MouseEvent e) {
+
+                                    }
+                                });
+
+                                power.getImg().addMouseListener(new MouseListener() {
+                                    @Override
+                                    public void mouseClicked(MouseEvent e) {
+                                        String serverAddress = "http://localhost:8080/";
+                                        HessianProxyFactory factory = new HessianProxyFactory();
+                                        RequestManagerApi apiTest = null;
+
+                                        try {
+                                            apiTest = (RequestManagerApi) factory.create(RequestManagerApi.class, serverAddress + "DataService");
+                                        } catch (MalformedURLException e1) {
+                                            e1.printStackTrace();
+                                        }
+
+                                        String[] rationInfo = new String[0];
+                                        float[] protFatCar = new float[20];
+                                        try {
+                                            rationInfo = apiTest.selectInfoForRationPopUpLeft("Power");
+                                            protFatCar = apiTest.selectInfoForRationPopRight("Power");
+                                        } catch (ClassNotFoundException e1) {
+                                            e1.printStackTrace();
+                                        } catch (SQLException e1) {
+                                            e1.printStackTrace();
+                                        }
+                                        RationInfoPopUp rationPopUp = new RationInfoPopUp(rationInfo[1],rationInfo[2],rationInfo[3],rationInfo[4],rationInfo[5]);
+                                        rationPopUp.init();
+
+                                        String[] finalRationInfo = rationInfo;
+                                        float[] finalProtFatCar = protFatCar;
+                                        rationPopUp.getJt().addTreeSelectionListener(new TreeSelectionListener() {
+                                            @Override
+                                            public void valueChanged(TreeSelectionEvent e) {
+                                                TreePath path = rationPopUp.getJt().getSelectionPath();
+                                                String treeNodeValue = path.getPathComponent(path.getPathCount()-1).toString().trim();
+                                                System.out.println(path.getPathComponent(path.getPathCount()-1));
+                                                if(treeNodeValue.equals(finalRationInfo[1]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[0]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[1]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[2]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[3]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[2]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[4]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[5]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[6]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[7]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[3]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[8]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[9]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[10]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[11]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[4]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[12]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[13]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[14]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[15]));
+                                                }
+                                                if(treeNodeValue.equals(finalRationInfo[5]))
+                                                {
+                                                    rationPopUp.setTfProteins(String.valueOf(finalProtFatCar[16]));
+                                                    rationPopUp.setTfFats(String.valueOf(finalProtFatCar[17]));
+                                                    rationPopUp.setTfCarbohydrates(String.valueOf(finalProtFatCar[18]));
+                                                    rationPopUp.setTfKkl(String.valueOf(finalProtFatCar[19]));
+                                                }
+
+                                            }
+                                        });
+                                    }
+                                    @Override
+                                    public void mousePressed(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseReleased(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseEntered(MouseEvent e) {
+
+                                    }
+                                    @Override
+                                    public void mouseExited(MouseEvent e) {
+
+                                    }
+                                });
+
+
+
                                 daily.getbToOrder().addActionListener(new ActionListener() {
                                     @Override
                                     public void actionPerformed(ActionEvent e) {
@@ -258,7 +540,7 @@ public class Start {
                                             } catch (MalformedURLException e2) {
                                                 e2.printStackTrace();
                                             }
-                                            apiTest.updateAccountInformation(profile.getTfLogin().getText(),profile.getTfPassword().getText());
+                                            apiTest.updateAccountInformation(loginId1,profile.getTfLogin().getText(),profile.getTfPassword().getText());
                                         }
                                     }
                                 });

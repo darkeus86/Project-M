@@ -3,7 +3,7 @@ import com.alee.laf.rootpane.WebFrame;
 
 import java.awt.*;
 
-public class test {
+class test {
     public static void main(String[] args) {
         WebFrame frame = new WebFrame();
         profileMarkup profile = new profileMarkup();

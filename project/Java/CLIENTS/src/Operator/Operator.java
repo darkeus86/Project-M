@@ -435,7 +435,7 @@ public class Operator extends WebFrame {
                             registration.dispose();
                             authorizationWindow.setVisible(true);
                             try {
-                                System.out.print(apiTest.insertSimpleUser(registration.getLogin().getText(), pass));
+                                apiTest.insertSimpleUser(registration.getLogin().getText(), pass);
                             } catch (ClassNotFoundException | SQLException e1) {
                                 e1.printStackTrace();
                             }

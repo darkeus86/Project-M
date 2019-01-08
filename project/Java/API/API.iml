@@ -8,7 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="hessian-4.0.51" level="project" />
-    <orderEntry type="module" module-name="CLIENTS" />
     <orderEntry type="library" name="hessian-4.0.51" level="project" />
     <orderEntry type="library" name="postgresql-42.2.5" level="application" />
   </component>

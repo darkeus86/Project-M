@@ -22,40 +22,39 @@ import java.util.Date;
 ###########################################*/
 
 public class CartMarkup {
-    WebPanel mainPanel = new WebPanel();
-    GridBagLayout gbL = new GridBagLayout();
+    private final WebPanel mainPanel = new WebPanel();
 
-    WebButton bCancel = new WebButton("Cancel");
-    WebButton bConfirm = new WebButton("Confirm");
+    private final WebButton bCancel = new WebButton("Cancel");
+    private final WebButton bConfirm = new WebButton("Confirm");
 
-    WebLabel lDeliveryAdress = new WebLabel("Delivery address");
-    WebLabel lTitle = new WebLabel();
-    WebLabel lPrice = new WebLabel();
+    private WebLabel lDeliveryAdress = new WebLabel("Delivery address");
+    private final WebLabel lTitle = new WebLabel();
+    private final WebLabel lPrice = new WebLabel();
 
 
-    WebTextField tfHouse = new WebTextField();
-    WebTextField tfHousing = new WebTextField();
-    WebTextField tfRoom = new WebTextField();
-    WebTextField tfFirstName = new WebTextField();
-    WebTextField tfSecondName = new WebTextField();
+    private final WebTextField tfHouse = new WebTextField();
+    private final WebTextField tfHousing = new WebTextField();
+    private final WebTextField tfRoom = new WebTextField();
+    private WebTextField tfFirstName = new WebTextField();
+    private WebTextField tfSecondName = new WebTextField();
 
-    String[] cities = {"St. Petersburg"};
-    String[] streets = {"Nevsky avenue","Ligovsky Avenue","Pervomaisky Avenue", "Aptekarsky Avenue","text_field+combobox plagin"};
+    private final String[] cities = {"St. Petersburg"};
+    private final String[] streets = {"Nevsky avenue","Ligovsky Avenue","Pervomaisky Avenue", "Aptekarsky Avenue","text_field+combobox plagin"};
 
-    WebComboBox cbCities = new WebComboBox(cities);
-    WebComboBox cbStreets = new WebComboBox(streets);
+    private final WebComboBox cbCities = new WebComboBox(cities);
+    private final WebComboBox cbStreets = new WebComboBox(streets);
 
-    Date date = new Date(12);
-    JDateChooser calendar = new JDateChooser(date);
+    private final Date date = new Date(12);
+    private final JDateChooser calendar = new JDateChooser(date);
 
-    SpinnerModel hours = new SpinnerNumberModel(0, 0, 24, 1);
-    SpinnerModel minutes = new SpinnerNumberModel(0, 0, 60, 1);
+    private final SpinnerModel hours = new SpinnerNumberModel(0, 0, 24, 1);
+    private final SpinnerModel minutes = new SpinnerNumberModel(0, 0, 60, 1);
 
-    WebSpinner wbHour = new WebSpinner(hours);
-    WebSpinner wbMin = new WebSpinner(minutes);
+    private final WebSpinner wbHour = new WebSpinner(hours);
+    private final WebSpinner wbMin = new WebSpinner(minutes);
 
-    MaskFormatter maskTelephone = new MaskFormatter("+7-(###)-###-##-##");
-    JFormattedTextField tfPhoneNum = new JFormattedTextField(maskTelephone);
+    private final MaskFormatter maskTelephone = new MaskFormatter("+7-(###)-###-##-##");
+    private final JFormattedTextField tfPhoneNum = new JFormattedTextField(maskTelephone);
 
 
     public WebButton getbCancel() {
@@ -67,6 +66,7 @@ public class CartMarkup {
     }
 
     public CartMarkup() throws ParseException {
+        GridBagLayout gbL = new GridBagLayout();
         mainPanel.setLayout(gbL);
 
         tfPhoneNum.setBorder(BorderFactory.createTitledBorder("Phone"));

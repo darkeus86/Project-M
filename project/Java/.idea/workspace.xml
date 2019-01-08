@@ -6,7 +6,164 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f9cb023-2636-4586-834c-dcfe29d9f91d" name="Default Changelist" comment="" />
+    <list default="true" id="7f9cb023-2636-4586-834c-dcfe29d9f91d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/ApiProjectM/RationsInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/ApiProjectM/Reports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SERVER/lib/hessian-4.0.51.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SERVER/lib/servlet-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Couriers.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Operators.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Orders.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Profile.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Rations.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Reports.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scripts/Simple Users.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API/API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AddingCouriers/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AddingCouriers/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AddingCouriers/WindowAddingCourier.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AddingCouriers/WindowAddingCourier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Authorization/Authorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Authorization/Authorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Registration/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Registration/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Content.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/InProgress.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/InProgress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Cart/CartMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Cart/IntermediatePicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Cart/IntermediatePicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentContainer/MainPageContentContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentContainer/MainPageContentContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/MainPageContentMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/PaymentPopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/PaymentPopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/RationInfoPopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/RationInfoPopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationDataFromDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationInformationOnMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/RationInformationOnMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/RationMurkup/Rations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIENTS/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIENTS/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVER/SERVER.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/SERVER.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SERVER/src/server/AbuseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/SERVER/src/server/AbuseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/ApiProjectM/OrderInfoOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/ApiProjectM/OrderInfoOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/ApiProjectM/RequestManagerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/ApiProjectM/RequestManagerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/AuthorizationAndRegistration/Authorization/Authorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/AuthorizationAndRegistration/Authorization/Authorization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/AuthorizationAndRegistration/Registration/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/AuthorizationAndRegistration/Registration/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$7$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/Operator/ReportsWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/MainFormMarkup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/MainFormMarkup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/PopUpWindows/PaymentPopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/PopUpWindows/PaymentPopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/PopUpWindows/RationInfoPopUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/PopUpWindows/RationInfoPopUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/User/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/AbuseApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/server/AbuseApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ApiProjectM/CourierInfoOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ApiProjectM/OrderInfoOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ApiProjectM/Ration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ApiProjectM/RequestManagerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/ApiProjectM/RequestManagerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingCouriers/Courier$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingCouriers/Courier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingCouriers/WindowAddingCourier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingOperators/Operator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingOperators/Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AddingOperators/WindowAddingOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AuthorizationAndRegistration/Authorization/Authorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/AuthorizationAndRegistration/Registration/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Content.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/InProgress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Login$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MenuBar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CLIENTS/Operator/MyOrdersTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/NewOrdersTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/ReportsWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/Operator/SendTechnicalReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/CartMarkup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Cart/IntermediatePicture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/MainFormMarkup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/MainPageContentContainer/MainPageContentContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/MainPageContentMarkup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/PopUpWindows/PaymentPopUp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/PopUpWindows/PaymentPopUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/PopUpWindows/RationInfoPopUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/RationDataFromDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/RationInformationOnMainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/RationMurkup/Rations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$6$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/User/profileMarkup/profileMarkup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CLIENTS/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SERVER/server/AbuseApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SERVER/server/AbuseApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PROJECT BACKUP.7z" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +171,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4029">
-              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="256">
+              <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6748#6749#0" expanded="true" />
-                <element signature="e#6776#6777#0" expanded="true" />
+                <element signature="e#3556#3575#0" expanded="true" />
+                <element signature="e#5386#10173#0" expanded="true" />
+                <element signature="e#6311#6330#0" expanded="true" />
+                <element signature="e#10172#10173#0" expanded="true" />
+                <element signature="e#14037#14038#0" expanded="true" />
+                <element signature="e#14083#14084#0" expanded="true" />
+                <element signature="e#14797#14798#0" expanded="true" />
+                <element signature="e#14857#14858#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Reports.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -33,8 +228,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="493">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="842">
+              <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="390" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#16588#16589#0" expanded="true" />
+                <element signature="e#16616#16617#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2810#2819#0" expanded="true" />
+                <element signature="e#6551#6552#0" expanded="true" />
+                <element signature="e#6583#6584#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,22 +284,35 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SET</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/RationInfoPopUp.java" />
-        <option value="$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java" />
-        <option value="$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
-        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java" />
+        <option value="$PROJECT_DIR$/SERVER/src/server/AbuseApiImpl.java" />
+        <option value="$PROJECT_DIR$/API/src/ApiProjectM/RationsInformation.java" />
         <option value="$PROJECT_DIR$/CLIENTS/src/User/Start.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Registration/Registration.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/PaymentPopUp.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Authorization/Authorization.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/RationInfoPopUp.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/Login.java" />
+        <option value="$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java" />
         <option value="$PROJECT_DIR$/SERVER/src/server/AbuseApi.java" />
+        <option value="$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java" />
       </list>
     </option>
   </component>
@@ -75,30 +324,22 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1368" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="784" />
+    <option name="x" value="683" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -134,18 +375,7 @@
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="CLIENTS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Operator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -165,43 +395,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Libs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546730091869" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546861395199" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/postgresql-42.2.5.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Snacki_Click\Desktop\Java\src\Libs" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ApiProjectM" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\src\Libs" />
-      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\out\artifacts\unnamed\WEB-INF\classes\Libs" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER\src\server" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER\lib" />
+      <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\SERVER" />
       <recent name="C:\Users\shut\Documents\GitHub\Project-M\project\Java\out\artifacts\unnamed\WEB-INF\lib" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,8 +435,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="RationInfoPopUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="User.PopUpWindows.RationInfoPopUp" />
       <module name="CLIENTS" />
       <extension name="coverage">
@@ -243,14 +464,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="CLIENTS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_181\jre">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -400,13 +614,11 @@
       <item itemvalue="Application.Start" />
       <item itemvalue="Application.RationInfoPopUp" />
       <item itemvalue="Tomcat Server.Server" />
-      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.RationInfoPopUp" />
         <item itemvalue="Application.Start" />
+        <item itemvalue="Application.RationInfoPopUp" />
       </list>
     </recent_temporary>
   </component>
@@ -421,28 +633,30 @@
       <option name="presentableId" value="Default" />
       <updated>1546711149519</updated>
       <workItem from="1546711163043" duration="12155000" />
-      <workItem from="1546729349261" duration="749000" />
+      <workItem from="1546759102921" duration="11369000" />
+      <workItem from="1546779146365" duration="13455000" />
+      <workItem from="1546850348722" duration="10819000" />
+      <workItem from="1546906948198" duration="30000" />
+      <workItem from="1546907177025" duration="722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12904000" />
+    <option name="totallyTimeSpent" value="34491000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1368" y="-8" width="1376" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22948328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24040511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23606557" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.13934426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,8 +666,9 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32822084" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.6262295" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -463,6 +678,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,12 +687,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020" />
+        <state relative-caret-position="272">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/NewOrdersTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
+        <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -484,26 +702,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java" />
-    <entry file="file://$PROJECT_DIR$/SERVER/SERVER.iml">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="31" selection-start-line="7" selection-start-column="7" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApiImpl.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/API/ApiProjectM/RequestManagerApi.class">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/ApiProjectM/RequestManagerApi.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9106">
+          <caret line="572" column="72" selection-start-line="572" selection-start-column="72" selection-end-line="572" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/MainFormMarkup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="63" column="46" selection-start-line="61" selection-start-column="8" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Registration/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/PaymentPopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="48" column="206" selection-start-line="48" selection-start-column="206" selection-end-line="48" selection-end-column="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/AuthorizationAndRegistration/Authorization/Authorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/PopUpWindows/RationInfoPopUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="162">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#3374#3375#0" expanded="true" />
-            <element signature="e#3414#3415#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
-            <element signature="e#3591#3592#0" expanded="true" />
-            <element signature="e#3633#3634#0" expanded="true" />
-            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#6446#6447#0" expanded="true" />
+            <element signature="e#6486#6487#0" expanded="true" />
+            <element signature="e#6529#6530#0" expanded="true" />
+            <element signature="e#6566#6567#0" expanded="true" />
+            <element signature="e#6618#6619#0" expanded="true" />
+            <element signature="e#6663#6664#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#6741#6742#0" expanded="true" />
+            <element signature="e#6797#6798#0" expanded="true" />
+            <element signature="e#6833#6834#0" expanded="true" />
+            <element signature="e#6895#6896#0" expanded="true" />
+            <element signature="e#6937#6938#0" expanded="true" />
+            <element signature="e#6990#6991#0" expanded="true" />
+            <element signature="e#7023#7024#0" expanded="true" />
+            <element signature="e#7084#7085#0" expanded="true" />
+            <element signature="e#7125#7126#0" expanded="true" />
+            <element signature="e#7183#7184#0" expanded="true" />
+            <element signature="e#7221#7222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,76 +815,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Ration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Reports.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingCouriers/Courier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="68">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingCouriers/WindowAddingCourier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="442">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MyOrdersTable.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/AddingOperators/WindowAddingOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/OrderInfoOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Ration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/RationsInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/InProgress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/MenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="68">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="352" column="13" lean-forward="true" selection-start-line="352" selection-start-column="13" selection-end-line="352" selection-end-column="13" />
+        <state relative-caret-position="256">
+          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3556#3575#0" expanded="true" />
+            <element signature="e#5386#10173#0" expanded="true" />
+            <element signature="e#6311#6330#0" expanded="true" />
+            <element signature="e#10172#10173#0" expanded="true" />
             <element signature="e#14037#14038#0" expanded="true" />
             <element signature="e#14083#14084#0" expanded="true" />
             <element signature="e#14797#14798#0" expanded="true" />
@@ -593,53 +914,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java">
+    <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/Reports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/profileMarkup/profileMarkup.java">
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/ReportsWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="491">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2810#2819#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6583#6584#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLIENTS/src/User/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="257" column="80" lean-forward="true" selection-start-line="257" selection-start-column="80" selection-end-line="257" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/API/src/ApiProjectM/RequestManagerApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="493">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SERVER/src/server/AbuseApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4029">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="842">
+          <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="390" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6748#6749#0" expanded="true" />
-            <element signature="e#6776#6777#0" expanded="true" />
+            <element signature="e#16588#16589#0" expanded="true" />
+            <element signature="e#16616#16617#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLIENTS/src/Operator/SendTechnicalReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -698,11 +1018,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SERVER</last-edited>
+          <last-edited>project</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -710,7 +1031,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hessian-4.0.51</last-edited>
+          <last-edited>servlet-api-2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

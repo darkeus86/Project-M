@@ -8,8 +8,7 @@ import com.caucho.hessian.client.HessianProxyFactory;
 import java.net.MalformedURLException;
 import java.sql.SQLException;
 
-public class RationInformationOnMainPage {
-    Ration ration;
+class RationInformationOnMainPage {
 
 
     public RationInformationOnMainPage(String title) throws SQLException, ClassNotFoundException {
@@ -22,7 +21,7 @@ public class RationInformationOnMainPage {
             e2.printStackTrace();
         }
         WebImage imgForDaily = new WebImage(".idea/resource/images/vegetables.png");
-        ration = apiTest.selectInformationRation(title);
+        Ration ration = apiTest.selectInformationRation(title);
         Rations daily = new Rations(ration.getTitle(), ration.getDescription(), ration.getPrice() + " $", imgForDaily);
     }
 }

@@ -5,7 +5,7 @@ import com.alee.laf.rootpane.WebFrame;
 
 import java.awt.*;
 
-public class InProgress extends WebFrame {
+class InProgress extends WebFrame {
     InProgress()
     {
     }
